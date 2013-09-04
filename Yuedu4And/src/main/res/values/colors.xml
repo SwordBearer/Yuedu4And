@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="gray_normal">#F0F0F0</color>
+    <color name="gray_dark">#8E8E8E</color>
+    <color name="red">#f00</color>
+
+    <!--drawer-->
+    <color name="drawer_bg">#1b1c1f</color>
+    <color name="player_footer">#a0fdfdfd</color>
+    <color name="player_progress_outline">#dadada</color>
+    <color name="player_progress_second">#a3b39d</color>
+    <color name="player_progress">#fd4a16</color>
+    <color name="player_name">#fff</color>
+    <color name="player_time">#303030</color>
+</resources>

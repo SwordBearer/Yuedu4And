@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">乐读</string>
+    <!--action-->
+    <string name="action_refresh">刷新</string>
+    <string name="action_person">个人中心</string>
+    <!---->
+    <string name="get_data_failed">获取数据错误</string>
+    <string name="not_access_network">网络连接异常，请稍后重试...</string>
+    <string name="not_access_sdcard">未检测到系统的SD卡，无法下载...</string>
+    <string name="quit_hint">再按一次退出程序...</string>
+    <string name="offline_started">离线下载开始</string>
+    <string name="offline_ing">正在进行离线下载</string>
+    <string name="offline_finished">离线下载完成</string>
+
+    <!--article-->
+    <string name="daily_article">每日阅读</string>
+
+    <!--settings-->
+    <string name="offline">离线下载</string>
+    <string name="offline_details">可以提前下载内容以供您在无网络时进行阅读，推荐在WIFI下使用</string>
+    <string name="start_offline">开始离线下载</string>
+    <string name="offline_on">开启定时离线下载</string>
+    <string name="offline_off">关闭定时离线下载</string>
+    <string name="offline_article_on">文章下载</string>
+    <string name="offline_picture_on">封面下载</string>
+    <string name="offline_music_on">音乐下载</string>
+</resources>

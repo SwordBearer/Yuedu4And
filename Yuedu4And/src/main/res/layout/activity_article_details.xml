@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout style="@style/AppHead">
+
+        <ImageButton
+                android:id="@+id/article_details_back"
+                style="@style/AppHeadBtn"
+                android:src="@drawable/selector_btn_back"/>
+
+        <ImageButton
+                android:id="@+id/article_details_refresh"
+                style="@style/AppHeadBtn"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/selector_btn_referesh"/>
+    </RelativeLayout>
+
+    <WebView
+            android:id="@+id/article_details_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            style="@style/AppHead"
+            android:id="@+id/offline_head">
+
+        <ImageButton
+                android:id="@+id/offline_btn_slide"
+                style="@style/AppHeadSlide"
+                android:src="@drawable/selector_head_slide_menu"
+                android:layout_alignParentLeft="true"/>
+
+        <TextView
+                style="@style/AppHeadTitle"
+                android:text="@string/offline"/>
+    </RelativeLayout>
+
+    <TextView
+            android:text="@string/offline_details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:id="@+id/offline_btn_start"
+            android:layout_height="wrap_content"
+            android:text="@string/start_offline"/>
+
+    <CheckBox
+            android:layout_width="fill_parent"
+            android:id="@+id/offline_cb_on"
+            android:layout_height="wrap_content"
+            android:text="@string/offline_on"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/offline_group">
+
+        <CheckBox
+                android:layout_width="fill_parent"
+                android:id="@+id/offline_cb_article_on"
+                android:layout_height="wrap_content"
+                android:text="@string/offline_article_on"/>
+
+        <CheckBox
+                android:layout_width="fill_parent"
+                android:id="@+id/offline_cb_picture_on"
+                android:layout_height="wrap_content"
+                android:text="@string/offline_picture_on"/>
+
+        <CheckBox
+                android:layout_width="fill_parent"
+                android:id="@+id/offline_cb__music_on"
+                android:layout_height="wrap_content"
+                android:text="@string/offline_music_on"/>
+    </LinearLayout>
+</LinearLayout>
