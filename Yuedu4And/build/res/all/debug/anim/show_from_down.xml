@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<translate xmlns:android="http://schemas.android.com/apk/res/android"
-           android:duration="400"
-           android:interpolator="@android:anim/anticipate_overshoot_interpolator"
-           android:fromYDelta="100%"
-           android:toYDelta="0%">
-</translate><!-- From: file:/E:/code/github/Yuedu4And/Yuedu4And/src/main/res/anim/show_from_down.xml -->
