@@ -20,14 +20,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import xmu.swordbearer.yuedu.R;
-import xmu.swordbearer.yuedu.net.api.NetHelper;
-import xmu.swordbearer.yuedu.offline.DownloadPictureTask;
 import xmu.swordbearer.yuedu.ui.fragment.ArticleListFragment;
 import xmu.swordbearer.yuedu.ui.fragment.BasePageFragment;
 import xmu.swordbearer.yuedu.ui.fragment.MusicListFragment;
 import xmu.swordbearer.yuedu.ui.fragment.OfflineFragment;
 import xmu.swordbearer.yuedu.ui.fragment.SettingsFragment;
-import xmu.swordbearer.yuedu.utils.UiHelper;
 
 /**
  * Created by SwordBearer on 13-8-21.

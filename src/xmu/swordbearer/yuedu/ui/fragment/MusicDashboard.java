@@ -22,14 +22,13 @@ import org.json.JSONException;
 import java.util.List;
 
 import xmu.swordbearer.yuedu.R;
-import xmu.swordbearer.yuedu.bean.Music;
+import xmu.swordbearer.yuedu.core.music.MusicPlayerService;
+import xmu.swordbearer.yuedu.core.net.MusicAPI;
+import xmu.swordbearer.yuedu.core.net.NetHelper;
+import xmu.swordbearer.yuedu.core.net.OnRequestListener;
 import xmu.swordbearer.yuedu.db.DBManager;
-import xmu.swordbearer.yuedu.music.MusicPlayerService;
-import xmu.swordbearer.yuedu.net.api.MusicAPI;
-import xmu.swordbearer.yuedu.net.api.NetHelper;
-import xmu.swordbearer.yuedu.net.api.OnRequestListener;
-import xmu.swordbearer.yuedu.offline.DownloadPictureTask;
-import xmu.swordbearer.yuedu.utils.UiHelper;
+import xmu.swordbearer.yuedu.db.bean.Music;
+import xmu.swordbearer.yuedu.utils.UiUtils;
 
 /**
  * Created by SwordBearer on 13-8-17.
@@ -83,20 +82,18 @@ public class MusicDashboard extends Fragment implements View.OnClickListener {
     private Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
-            UiHelper.showToast(getActivity(),
+            UiUtils.showToast(getActivity(),
                     R.string.get_data_failed);
         }
     };
 
     private void loadData() {
         if (!NetHelper.isNetworkConnected(getActivity())) {
-            UiHelper.showToast(getActivity(), R.string.not_access_network);
+            UiUtils.showToast(getActivity(), R.string.not_access_network);
             return;
         }
         //读取音乐
         getDailyMusic();
-        // 下载图片
-        new DownloadPictureTask(getActivity()).onStart(null);
     }
 
     private void getDailyMusic() {

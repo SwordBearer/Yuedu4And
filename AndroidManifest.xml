@@ -46,10 +46,10 @@
             android:launchMode="singleTask" >
         </activity>
 
-        <service android:name=".offline.OfflineService" />
+        <service android:name=".core.offline.OfflineService" />
 
         <receiver
-            android:name=".offline.OfflineBroadcast"
+            android:name=".core.offline.OfflineBroadcast"
             android:process=".offline" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -58,10 +58,10 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".music.MusicPlayerService" >
+        <service android:name=".core.music.MusicPlayerService" >
         </service>
 
-        <receiver android:name=".music.BecomeNoisyReceiver" >
+        <receiver android:name=".core.music.BecomeNoisyReceiver" >
             <intent-filter>
                 <action android:name="android.media.AUDIO_BECOMING_NOISY" />
             </intent-filter>

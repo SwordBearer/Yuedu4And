@@ -8,7 +8,7 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import xmu.swordbearer.yuedu.bean.Music;
+import xmu.swordbearer.yuedu.db.bean.Music;
 
 /**
  * Created by SwordBearer on 13-8-17.

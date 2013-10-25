@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,15 +16,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import xmu.swordbearer.yuedu.R;
-import xmu.swordbearer.yuedu.bean.Article;
-import xmu.swordbearer.yuedu.bean.FeedList;
-import xmu.swordbearer.yuedu.bean.FeedListAdapter;
-import xmu.swordbearer.yuedu.net.api.ArticleAPI;
-import xmu.swordbearer.yuedu.net.api.NetHelper;
-import xmu.swordbearer.yuedu.net.api.OnRequestListener;
-import xmu.swordbearer.yuedu.net.api.Utils;
+import xmu.swordbearer.yuedu.core.net.ArticleAPI;
+import xmu.swordbearer.yuedu.core.net.NetHelper;
+import xmu.swordbearer.yuedu.core.net.OnRequestListener;
+import xmu.swordbearer.yuedu.db.bean.Article;
+import xmu.swordbearer.yuedu.db.bean.FeedList;
+import xmu.swordbearer.yuedu.db.bean.FeedListAdapter;
 import xmu.swordbearer.yuedu.ui.activity.ArticleDetailsActivity;
-import xmu.swordbearer.yuedu.utils.UiHelper;
+import xmu.swordbearer.yuedu.utils.CommonUtils;
+import xmu.swordbearer.yuedu.utils.UiUtils;
 
 /**
  * Created by SwordBearer on 13-8-21.
@@ -65,7 +64,7 @@ public class ArticleListFragment extends BasePageFragment {
             }
         });
         //
-        feedList = (FeedList) Utils.readCache(mContext, FeedList.generateCacheKey());
+        feedList = (FeedList) CommonUtils.readCache(mContext, FeedList.generateCacheKey());
         if (feedList == null || feedList.getFeeds().size() == 0) {
             feedList = new FeedList();
             getFeeds();
@@ -78,7 +77,7 @@ public class ArticleListFragment extends BasePageFragment {
         if (!NetHelper.isNetworkConnected(mContext)) {
             return;
         }
-        Utils.deleteCache(mContext, FeedList.generateCacheKey());
+        CommonUtils.deleteCache(mContext, FeedList.generateCacheKey());
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -104,7 +103,7 @@ public class ArticleListFragment extends BasePageFragment {
             try {
                 FeedList temp = FeedList.parseJSON(ja);
                 feedList.appendFeeds(temp);
-                Utils.saveCache(mContext, FeedList.generateCacheKey(), feedList);
+                CommonUtils.saveCache(mContext, FeedList.generateCacheKey(), feedList);
                 handler.sendEmptyMessage(1);
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -118,7 +117,7 @@ public class ArticleListFragment extends BasePageFragment {
             if (msg.what == 1) {
                 mAdapter.notifyDataSetChanged();
             } else {
-                UiHelper.showToast(mContext, R.string.get_data_failed);
+                UiUtils.showToast(mContext, R.string.get_data_failed);
             }
         }
     };

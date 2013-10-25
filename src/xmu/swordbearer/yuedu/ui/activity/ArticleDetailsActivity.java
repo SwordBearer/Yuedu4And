@@ -13,12 +13,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import xmu.swordbearer.yuedu.R;
-import xmu.swordbearer.yuedu.bean.Article;
-import xmu.swordbearer.yuedu.net.api.ArticleAPI;
-import xmu.swordbearer.yuedu.net.api.NetHelper;
-import xmu.swordbearer.yuedu.net.api.OnRequestListener;
-import xmu.swordbearer.yuedu.net.api.Utils;
-import xmu.swordbearer.yuedu.utils.UiHelper;
+import xmu.swordbearer.yuedu.core.net.ArticleAPI;
+import xmu.swordbearer.yuedu.core.net.NetHelper;
+import xmu.swordbearer.yuedu.core.net.OnRequestListener;
+import xmu.swordbearer.yuedu.db.bean.Article;
+import xmu.swordbearer.yuedu.utils.CommonUtils;
+import xmu.swordbearer.yuedu.utils.UiUtils;
 
 /**
  * Created by SwordBearer on 13-8-12.
@@ -41,7 +41,7 @@ public class ArticleDetailsActivity extends Activity {
         Intent i = getIntent();
         articleId = i.getLongExtra("extra_article_id", -1);
         if (articleId == -1) {
-            UiHelper.showToast(this, R.string.get_data_failed);
+            UiUtils.showToast(this, R.string.get_data_failed);
             finish();
             return;
         }
@@ -50,7 +50,7 @@ public class ArticleDetailsActivity extends Activity {
         webView = (WebView) findViewById(R.id.article_details_webview);
 
         mArticle.setId(articleId);
-        mArticle = (Article) Utils.readCache(this, mArticle.generateCacheKey());
+        mArticle = (Article) CommonUtils.readCache(this, mArticle.generateCacheKey());
         if (mArticle == null) {
             getArticleDetails();
         } else {
@@ -62,7 +62,7 @@ public class ArticleDetailsActivity extends Activity {
 //        progressBar.setVisibility(View.VISIBLE);
         if (!NetHelper.isNetworkConnected(this)) {
 //            progressBar.setVisibility(View.INVISIBLE);
-            UiHelper.showToast(this, R.string.not_access_network);
+            UiUtils.showToast(this, R.string.not_access_network);
             return;
         }
         new Thread(new Runnable() {
@@ -97,7 +97,7 @@ public class ArticleDetailsActivity extends Activity {
             JSONObject response = (JSONObject) obj;
             try {
                 mArticle = Article.parseJSON(response);
-                Utils.saveCache(ArticleDetailsActivity.this, mArticle.generateCacheKey(), mArticle);
+                CommonUtils.saveCache(ArticleDetailsActivity.this, mArticle.generateCacheKey(), mArticle);
                 handler.sendEmptyMessage(1);
             } catch (JSONException e) {
                 onError(null);
@@ -115,7 +115,7 @@ public class ArticleDetailsActivity extends Activity {
                     showArticleDetails();
                     break;
                 case 0:
-                    UiHelper.showToast(ArticleDetailsActivity.this, R.string.get_data_failed);
+                    UiUtils.showToast(ArticleDetailsActivity.this, R.string.get_data_failed);
                     break;
                 default:
                     super.handleMessage(msg);

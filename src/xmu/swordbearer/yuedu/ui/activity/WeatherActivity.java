@@ -11,12 +11,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import xmu.swordbearer.yuedu.R;
-import xmu.swordbearer.yuedu.weather.DBManager;
-import xmu.swordbearer.yuedu.weather.MyLocation;
-import xmu.swordbearer.yuedu.weather.SeetingActivity;
-import xmu.swordbearer.yuedu.weather.Weather;
-import xmu.swordbearer.yuedu.weather.WeatherDesc;
-import xmu.swordbearer.yuedu.weather.WeatherManager;
+import xmu.swordbearer.yuedu.core.weather.DBManager;
+import xmu.swordbearer.yuedu.core.weather.MyLocation;
+import xmu.swordbearer.yuedu.core.weather.Weather;
+import xmu.swordbearer.yuedu.core.weather.WeatherDesc;
+import xmu.swordbearer.yuedu.core.weather.WeatherManager;
 
 public class WeatherActivity extends Activity {
 
@@ -59,7 +58,7 @@ public class WeatherActivity extends Activity {
         selectCityBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(WeatherActivity.this, SeetingActivity.class);
+                Intent intent = new Intent(WeatherActivity.this, WeatherSeetingActivity.class);
                 startActivityForResult(intent, 1);
             }
         });
