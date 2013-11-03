@@ -93,10 +93,6 @@ public class MusicDashboard extends Fragment implements View.OnClickListener {
             return;
         }
         //读取音乐
-        getDailyMusic();
-    }
-
-    private void getDailyMusic() {
         final OnRequestListener getMusicsListener = new OnRequestListener() {
             @Override
             public void onError(Object obj) {
@@ -139,6 +135,7 @@ public class MusicDashboard extends Fragment implements View.OnClickListener {
         //如果不允许非wifi情况播放音乐，则就播放其他已经下载音乐
         Log.e("TEST", "startPlayMusic 开始播放啦");
         List<Music> musicList = DBManager.getMusic(getActivity());
+        if (musicList.size() == 0) return;
         Log.d("FUCK", "总音乐数 " + musicList.size());
         Music music = musicList.get(0);//获取最新的一条音乐
         Log.e("TEST", "dashboard---------BEFORE startService   " + musicList.size());

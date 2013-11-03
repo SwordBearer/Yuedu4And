@@ -7,14 +7,17 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import xmu.swordbearer.yuedu.db.bean.Article;
 import xmu.swordbearer.yuedu.db.bean.Music;
 
 /**
- * Created by SwordBearer on 13-8-17.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-21.
  */
 public class DBHelper {
     private static DBHelper instance;
     public static final String TBL_MUSIC = "tbl_music";
+    public static final String TBL_ARTICLE = "tbl_article";
 
     private SQLiteDatabase db;
     private DBOpenHelper dbOpenHelper;
@@ -71,7 +74,7 @@ public class DBHelper {
      * 查询所有数据
      *
      * @param tblName
-     * @param order 排列顺序，按照 id 排序: asc 升序； desc 降序
+     * @param order   排列顺序，按照 id 排序: asc 升序； desc 降序
      * @return
      */
     public Cursor queryAll(String tblName, String order) {
@@ -82,7 +85,13 @@ public class DBHelper {
     }
 
     public Cursor query(String tblName, int id) {
+        open();
         return db.rawQuery("SELECT * FROM " + tblName + " WHERE _id=" + id, null);
+    }
+
+    public Cursor queryByColumn(String tblName, String columnName, int colValue) {
+        open();
+        return db.rawQuery("SELECT * FROM " + tblName + " WHERE " + columnName + "=" + colValue, null);
     }
 
     private class DBOpenHelper extends SQLiteOpenHelper {
@@ -104,10 +113,24 @@ public class DBHelper {
                     + Music.MusicColumns._AUTHOR + " TEXT NOT NULL,"
                     + Music.MusicColumns._PATH + " TEXT,"
                     + Music.MusicColumns._URL + " TEXT NOT NULL,"
-                    + Music.MusicColumns._LYC_URL + " TEXT" +
-                    ")";
+                    + Music.MusicColumns._LYC_URL + " TEXT ,"
+                    + Music.MusicColumns._CLOUD_ID + " INTEGER NOT NULL"
+                    + ")";
+            String create_tbl_article = "CREATE TABLE IF NOT EXISTS "
+                    + TBL_ARTICLE + "("
+                    + Article.ArticleColumns._ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                    + Article.ArticleColumns._CLOUD_ID + " INTEGER NOT NULL,"
+                    + Article.ArticleColumns._TITLE + " TEXT NOT NULL,"
+                    + Article.ArticleColumns._AUTHOR + " TEXT,"
+                    + Article.ArticleColumns._SOURCE + " TEXT,"
+                    + Article.ArticleColumns._OUTLINE + " TEXT,"
+                    + Article.ArticleColumns._BIRTH + " LONG NOT NULL,"
+                    + Article.ArticleColumns._CONTENT + " TEXT NOT NULL"
+                    + ")";
             db.execSQL(create_tbl_music);
+            db.execSQL(create_tbl_article);
             Log.e("DBHelper  ", "创建数据库 " + create_tbl_music);
+            Log.e("DBHelper  ", "创建数据库 " + create_tbl_article);
         }
 
         @Override

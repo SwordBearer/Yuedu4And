@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+<!--
+ @author SwordBearer  e-mail :ranxiedao@163.com
+ Created by SwordBearer on 13-10-27.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
     <RelativeLayout
             style="@style/AppHead"
-            android:id="@+id/feeds_head">
+            android:id="@+id/musics_head">
 
         <ImageButton
-                android:id="@+id/main_btn_slide"
+                android:id="@+id/music_btn_slide"
                 style="@style/AppHeadSlide"
                 android:src="@drawable/selector_head_slide_menu"
                 android:layout_alignParentLeft="true"/>
 
         <TextView
                 style="@style/AppHeadTitle"
-                android:text="@string/daily_article"/>
+                android:text="@string/daily_music"/>
 
         <ImageButton
-                android:id="@+id/main_btn_favorite"
+                android:id="@+id/music_btn_refresh"
                 style="@style/AppHeadBtn"
                 android:layout_alignParentRight="true"
                 android:src="@drawable/selector_btn_referesh"/>
     </RelativeLayout>
 
     <ListView
-            android:id="@+id/main_feed_lv"
-            android:layout_below="@id/feeds_head"
+            android:id="@+id/music_lv"
             android:cacheColorHint="#0000"
             android:listSelector="@drawable/selector_feed_list"
             android:divider="@drawable/listitem_divider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-</RelativeLayout>
+</LinearLayout>

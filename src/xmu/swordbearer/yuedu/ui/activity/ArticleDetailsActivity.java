@@ -16,18 +16,20 @@ import xmu.swordbearer.yuedu.R;
 import xmu.swordbearer.yuedu.core.net.ArticleAPI;
 import xmu.swordbearer.yuedu.core.net.NetHelper;
 import xmu.swordbearer.yuedu.core.net.OnRequestListener;
+import xmu.swordbearer.yuedu.db.DBManager;
 import xmu.swordbearer.yuedu.db.bean.Article;
-import xmu.swordbearer.yuedu.utils.CommonUtils;
+import xmu.swordbearer.yuedu.utils.CalendarUtil;
 import xmu.swordbearer.yuedu.utils.UiUtils;
 
 /**
- * Created by SwordBearer on 13-8-12.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-21.
  */
 public class ArticleDetailsActivity extends Activity {
     private WebView webView;
     private ImageButton btnBack, btnRefresh;
-    private Article mArticle = new Article();
-    private long articleId;
+    private Article mArticle = null;
+    private int articleId;
 
 
     @Override
@@ -39,7 +41,7 @@ public class ArticleDetailsActivity extends Activity {
 
     public void initViews() {
         Intent i = getIntent();
-        articleId = i.getLongExtra("extra_article_id", -1);
+        articleId = i.getIntExtra("extra_article_id", -1);
         if (articleId == -1) {
             UiUtils.showToast(this, R.string.get_data_failed);
             finish();
@@ -49,8 +51,7 @@ public class ArticleDetailsActivity extends Activity {
         btnRefresh = (ImageButton) findViewById(R.id.article_details_refresh);
         webView = (WebView) findViewById(R.id.article_details_webview);
 
-        mArticle.setId(articleId);
-        mArticle = (Article) CommonUtils.readCache(this, mArticle.generateCacheKey());
+        mArticle = DBManager.getArticleByCloudId(this, articleId);
         if (mArticle == null) {
             getArticleDetails();
         } else {
@@ -76,7 +77,7 @@ public class ArticleDetailsActivity extends Activity {
         StringBuffer sBuffer = new StringBuffer();
         sBuffer.append("<html><body style='padding:0px 4px;'><div style='padding-left:10px;border-left:6px #CD0000 solid;'><div style='font-size:20px;font-weight:bold'>");
         sBuffer.append(mArticle.getTitle() + "</div>");
-        String birth = mArticle.getBirth().substring(0, 16);
+        String birth = CalendarUtil.timeStamp2Date(mArticle.getBirth(), "yyyy-MM-dd HH:mm");
         sBuffer.append("<div style='color:#828282;font-size:12px;'>" + birth + "</div></div>");
         sBuffer.append("<div style='text-indent: 2em;'>");
         sBuffer.append(mArticle.getContent());
@@ -97,7 +98,7 @@ public class ArticleDetailsActivity extends Activity {
             JSONObject response = (JSONObject) obj;
             try {
                 mArticle = Article.parseJSON(response);
-                CommonUtils.saveCache(ArticleDetailsActivity.this, mArticle.generateCacheKey(), mArticle);
+                DBManager.addArticle(ArticleDetailsActivity.this, mArticle);
                 handler.sendEmptyMessage(1);
             } catch (JSONException e) {
                 onError(null);
