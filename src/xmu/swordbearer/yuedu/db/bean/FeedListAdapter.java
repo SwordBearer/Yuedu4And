@@ -33,8 +33,8 @@ public class FeedListAdapter extends BaseListAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         Article article = (Article) mDataList.get(position);
-        holder.tvTitle.setText(article.title);
-        holder.tvOutline.setText(article.outline);
+        holder.tvTitle.setText(article.getTitle());
+        holder.tvOutline.setText(article.getOutline());
         return convertView;
     }
 

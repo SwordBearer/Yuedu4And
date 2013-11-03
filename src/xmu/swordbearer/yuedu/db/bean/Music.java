@@ -12,15 +12,15 @@ import xmu.swordbearer.yuedu.core.music.MusicPlayerService;
  * Created by SwordBearer on 13-8-17.
  */
 public class Music extends BaseBean {
-    public int id = -1;
-    public int type;//0 1 下载 收藏
-    public String name;//名称
-    public String details;//详细
-    public String author;//作者
-    public String path;//保存路径
-    public String url;//网络存放地址
-    public String lyc_url;//歌词的地址
-    public int cloudId;//云端ID
+    private int id = -1;
+    private int type;//0 1 下载 收藏
+    private String name;//名称
+    private String details;//详细
+    private String author;//作者
+    private String path;//保存路径
+    private String url;//网络存放地址
+    private String lyc_url;//歌词的地址
+    private int cloudId;//云端ID
 
 
     public Music() {
@@ -49,6 +49,7 @@ public class Music extends BaseBean {
         this.cloudId = jo.getInt("id");
     }
 
+
     public static class MusicColumns implements BaseColumns {
         public static final String _TYPE = "type";
         public static final String _NAME = "name";
@@ -59,4 +60,49 @@ public class Music extends BaseBean {
         public static final String _LYC_URL = "lyc_url";
         public static final String _CLOUD_ID = "cloudId";
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDetails() {
+        return details;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public String getLyc_url() {
+        return lyc_url;
+    }
+
+    public int getCloudId() {
+        return cloudId;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
 }

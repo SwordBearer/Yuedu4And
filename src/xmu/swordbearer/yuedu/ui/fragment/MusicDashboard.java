@@ -197,7 +197,7 @@ public class MusicDashboard extends Fragment implements View.OnClickListener {
     }
 
     private void updateView(Music music) {
-        tvName.setText(music.name + "-" + music.author);
+        tvName.setText(music.getName() + "-" + music.getAuthor());
     }
 
     private void togglePlay() {

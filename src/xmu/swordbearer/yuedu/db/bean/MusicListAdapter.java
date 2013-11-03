@@ -31,7 +31,7 @@ public class MusicListAdapter extends BaseListAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         Music music = (Music) mDataList.get(position);
-        holder.tvName.setText(music.name);
+        holder.tvName.setText(music.getName());
         return convertView;
     }
 

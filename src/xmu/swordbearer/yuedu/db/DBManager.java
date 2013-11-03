@@ -35,19 +35,19 @@ public class DBManager {
 
     public static int addMusic(Context context, Music music) {
         ContentValues values = new ContentValues();
-        values.put(Music.MusicColumns._TYPE, music.type);
-        values.put(Music.MusicColumns._NAME, music.name);
-        values.put(Music.MusicColumns._DETAILS, music.details);
-        values.put(Music.MusicColumns._AUTHOR, music.author);
-        values.put(Music.MusicColumns._PATH, music.path);
-        values.put(Music.MusicColumns._URL, music.url);
-        values.put(Music.MusicColumns._LYC_URL, music.lyc_url);
-        values.put(Music.MusicColumns._CLOUD_ID, music.cloudId);
+        values.put(Music.MusicColumns._TYPE, music.getType());
+        values.put(Music.MusicColumns._NAME, music.getName());
+        values.put(Music.MusicColumns._DETAILS, music.getDetails());
+        values.put(Music.MusicColumns._AUTHOR, music.getAuthor());
+        values.put(Music.MusicColumns._PATH, music.getPath());
+        values.put(Music.MusicColumns._URL, music.getUrl());
+        values.put(Music.MusicColumns._LYC_URL, music.getLyc_url());
+        values.put(Music.MusicColumns._CLOUD_ID, music.getCloudId());
 
         DBHelper dbHelper = DBHelper.getInstance(context);
         int result = dbHelper.insert(DBHelper.TBL_MUSIC, values);
 
-        Log.e("TEST", "DBManager---------addMusic 保存音乐 " + result + " ************** " + music.url);
+        Log.e("TEST", "DBManager---------addMusic 保存音乐 " + result + " ************** " + music.getUrl());
 
         dbHelper.close();
         return result;
@@ -95,13 +95,13 @@ public class DBManager {
     public static int addArticle(Context context, Article mArticle) {
         ContentValues values = new ContentValues();
 //        values.put(Article.ArticleColumns._DB_ID, mArticle.dbId);
-        values.put(Article.ArticleColumns._CLOUD_ID, mArticle.cloudId);// cloudId
-        values.put(Article.ArticleColumns._TITLE, mArticle.title);
-        values.put(Article.ArticleColumns._AUTHOR, mArticle.author);
-        values.put(Article.ArticleColumns._SOURCE, mArticle.source);
-        values.put(Article.ArticleColumns._OUTLINE, mArticle.outline);
-        values.put(Article.ArticleColumns._BIRTH, mArticle.birth);
-        values.put(Article.ArticleColumns._CONTENT, mArticle.content);
+        values.put(Article.ArticleColumns._CLOUD_ID, mArticle.getCloudId());// cloudId
+        values.put(Article.ArticleColumns._TITLE, mArticle.getTitle());
+        values.put(Article.ArticleColumns._AUTHOR, mArticle.getAuthor());
+        values.put(Article.ArticleColumns._SOURCE, mArticle.getSource());
+        values.put(Article.ArticleColumns._OUTLINE, mArticle.getOutline());
+        values.put(Article.ArticleColumns._BIRTH, mArticle.getBirth());
+        values.put(Article.ArticleColumns._CONTENT, mArticle.getContent());
 
         DBHelper dbHelper = DBHelper.getInstance(context);
         int dbId = dbHelper.insert(DBHelper.TBL_ARTICLE, values);

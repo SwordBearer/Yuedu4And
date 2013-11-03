@@ -96,7 +96,7 @@ public class MusicPlayerService extends Service implements
         } else if (action.equals(ACTION_MUSIC_START_PLAY)) {// play
             Log.e(TAG, "MusicPlayerService 播放音乐开始");
             Music music = (Music) intent.getSerializableExtra(EXTRA_MUSIC);
-            if (music == null || music.url == null) {
+            if (music == null || music.getUrl() == null) {
                 return START_NOT_STICKY;
             }
             play(music);
@@ -112,15 +112,16 @@ public class MusicPlayerService extends Service implements
 
     private void play(final Music music) {
         Uri uri = null;
-        if (music.path != null) {
-            File file = new File(music.path);
+        String path = music.getPath();
+        if (path != null) {
+            File file = new File(path);
             if (CommonUtils.isSDCard() && file.exists()) {
-                uri = Uri.parse(music.path);
+                uri = Uri.parse(path);
                 this.mSourceType = SOURCE_TYPE_FILE;
             }
         }
         if (uri == null) {
-            uri = Uri.parse(music.url);
+            uri = Uri.parse(music.getUrl());
             this.mSourceType = SOURCE_TYPE_STREAM;
         }
         stop();
@@ -159,11 +160,11 @@ public class MusicPlayerService extends Service implements
                 0, new Intent(getApplicationContext(), HomeActivity.class),
                 PendingIntent.FLAG_UPDATE_CURRENT);
         notification = new Notification();
-        notification.tickerText = music.name;
+        notification.tickerText = music.getName();
         notification.icon = android.R.drawable.ic_media_play;
         notification.flags |= Notification.FLAG_ONGOING_EVENT;
         notification.setLatestEventInfo(this, "乐读正在播放:", "Playing: "
-                + music.name, pi);
+                + music.getName(), pi);
         Log.e(TAG, "显示通知栏");
         startForeground(1, notification);
     }

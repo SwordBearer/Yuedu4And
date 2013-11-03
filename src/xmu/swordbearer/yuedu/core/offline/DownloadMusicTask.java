@@ -54,18 +54,19 @@ public class DownloadMusicTask extends BaseDownloadTask {
                 }
                 try {
                     Music mMusic = new Music(ja.getJSONObject(0));
-                    String url = mMusic.url;
-                    String extend = url.substring(mMusic.url.lastIndexOf("."), url.length());
+                    String url = mMusic.getUrl();
+                    String extend = url.substring(mMusic.getUrl().lastIndexOf("."), url.length());
                     String dir = Environment.getExternalStorageDirectory().getAbsolutePath() +
                             File.separator + "yuedu/offline/";
                     File file = new File(dir);
                     file.mkdirs();
-                    mMusic.path = dir + mMusic.name +
+                    String path = dir + mMusic.getName() +
                             extend;
-                    mMusic.type = MusicPlayerService.SOURCE_TYPE_FILE;
+                    mMusic.setPath(path);
+                    mMusic.setType(MusicPlayerService.SOURCE_TYPE_FILE);
                     DBManager.addMusic(mContext, mMusic);
-                    Log.e("TST", "保存的音乐的文件路径是 " + mMusic.path);
-                    downloadMusic(mMusic.url, mMusic.path);
+                    Log.e("TST", "保存的音乐的文件路径是 " + path);
+                    downloadMusic(url, path);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
