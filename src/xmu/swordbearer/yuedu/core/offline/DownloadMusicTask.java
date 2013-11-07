@@ -25,8 +25,10 @@ import xmu.swordbearer.yuedu.db.bean.Music;
 import xmu.swordbearer.yuedu.utils.CommonUtils;
 import xmu.swordbearer.yuedu.utils.UiUtils;
 
+
 /**
- * Created by SwordBearer on 13-8-14.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-14.
  */
 public class DownloadMusicTask extends BaseDownloadTask {
 
@@ -93,7 +95,7 @@ public class DownloadMusicTask extends BaseDownloadTask {
 
             FileOutputStream out = new FileOutputStream(new File(path));
             byte[] b = new byte[1024];
-            int len = 0;
+            int len;
             while ((len = in.read(b)) != -1) {
                 out.write(b, 0, len);
             }

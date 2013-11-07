@@ -14,14 +14,15 @@ import xmu.swordbearer.yuedu.utils.CommonUtils;
 import xmu.swordbearer.yuedu.utils.MD5Util;
 
 /**
- * Created by SwordBearer on 13-8-25.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-25.
  */
 public class PictureAPI extends ClientAPI {
     /**
      * 获取每日封面图片
      *
-     * @param context
-     * @param listener
+     * @param context  null
+     * @param listener null
      */
     public static void getDailyCover(Context context, OnRequestListener listener) {
         String name = CommonUtils.calendar2Date(Calendar.getInstance()) + ".png";
@@ -56,8 +57,8 @@ public class PictureAPI extends ClientAPI {
      * @param w        图片宽度
      * @param h        图片高度
      * @param format   图片格式
-     * @param listener
-     * @return
+     * @param listener null
+     * @return Bitmap
      */
     public static Bitmap getPicture(String url, int mode, int w, int h,
                                     String format, OnRequestListener listener) {
@@ -69,12 +70,12 @@ public class PictureAPI extends ClientAPI {
     /**
      * 生成七牛图片的访问链接
      *
-     * @param url
-     * @param mode
-     * @param w
-     * @param h
-     * @param format
-     * @return
+     * @param url    图片连接
+     * @param mode   图片模式
+     * @param w      图片宽度
+     * @param h      图片高度
+     * @param format 图片格式 eg:png,jpg
+     * @return 符合七牛云存储的图片链接
      */
     private static String generateImageViewUrl(String url, int mode, int w,
                                                int h, String format) {

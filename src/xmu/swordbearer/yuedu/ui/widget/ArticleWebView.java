@@ -5,7 +5,8 @@ import android.util.AttributeSet;
 import android.webkit.WebView;
 
 /**
- * Created by SwordBearer on 13-8-14.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-14.
  */
 public class ArticleWebView extends WebView {
     public ArticleWebView(Context context) {

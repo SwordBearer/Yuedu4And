@@ -25,14 +25,16 @@ import java.io.ObjectOutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+
 /**
- * Created by SwordBearer on 13-8-12.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-12.
  */
 public class CommonUtils {
     /**
      * 保存窗口尺寸
      *
-     * @param activity
+     * @param activity Activity
      */
     public static void saveWindowSize(Activity activity) {
         DisplayMetrics dm = new DisplayMetrics();
@@ -50,8 +52,8 @@ public class CommonUtils {
     /**
      * 获取窗口尺寸
      *
-     * @param context
-     * @return
+     * @param context Context
+     * @return Point
      */
     public static Point getWindowSize(Context context) {
         SharedPreferences prefs = context.getSharedPreferences("pref_app_size", Context.MODE_PRIVATE);
@@ -64,8 +66,8 @@ public class CommonUtils {
     /**
      * 保存音乐面板的尺寸
      *
-     * @param context
-     * @param view
+     * @param context Context
+     * @param view    View
      */
     public static void saveDashboardSize(Context context, View view) {
         int width = view.getWidth();
@@ -81,8 +83,8 @@ public class CommonUtils {
     /**
      * 获取音乐面板的尺寸
      *
-     * @param context
-     * @return
+     * @param context Context
+     * @return Point
      */
     public static Point getDashboardSize(Context context) {
         SharedPreferences prefs = context.getSharedPreferences("pref_app_size", Context.MODE_PRIVATE);
@@ -104,10 +106,10 @@ public class CommonUtils {
     /**
      * 保存缓存文件：建议缓存的数据是可序列化的，便于读取时进行反序列化操作
      *
-     * @param context
+     * @param context Context
      * @param key     缓存文件名
      * @param data    必须是Serializable对象
-     * @return
+     * @return boolean
      */
     public static boolean saveCache(Context context, String key, Object data) {
         FileOutputStream fos = null;
@@ -126,9 +128,12 @@ public class CommonUtils {
             e.printStackTrace();
         } finally {
             try {
-                oos.close();
-                fos.close();
+                if (oos != null)
+                    oos.close();
+                if (fos != null)
+                    fos.close();
             } catch (IOException e) {
+                //
             }
         }
         return false;
@@ -137,7 +142,7 @@ public class CommonUtils {
     /**
      * 读取缓存文件
      *
-     * @param context
+     * @param context Context
      * @param key     文件名
      * @return 返回Object对象:如果返回的实体可以被反序列化，可以使用Serializable进行类型转换
      */
@@ -146,8 +151,8 @@ public class CommonUtils {
         if (!data.exists()) {
             return null;
         }
-        FileInputStream fis = null;
-        ObjectInputStream ois = null;
+        FileInputStream fis;
+        ObjectInputStream ois;
         try {
             fis = context.openFileInput(key);
             ois = new ObjectInputStream(fis);
@@ -165,7 +170,7 @@ public class CommonUtils {
     /**
      * 删除缓存
      *
-     * @param context
+     * @param context Context
      * @param key     缓存文件名
      */
     public static void deleteCache(Context context, String key) {
@@ -178,7 +183,7 @@ public class CommonUtils {
     /**
      * 清除缓存
      *
-     * @param mContext
+     * @param mContext Context
      */
     public static boolean clearCache(Context mContext) {
         File file = mContext.getFilesDir();
@@ -194,7 +199,7 @@ public class CommonUtils {
     /**
      * 检测手机是否有SDCard
      *
-     * @return
+     * @return boolean
      */
     public static boolean isSDCard() {
         return (android.os.Environment.getExternalStorageState().equals(
@@ -204,11 +209,11 @@ public class CommonUtils {
     /**
      * 将图片流保存到SD卡中
      *
-     * @param context
-     * @param bmp
-     * @param url
-     * @param dir
-     * @return
+     * @param context Context
+     * @param bmp     Bitmap
+     * @param url     String
+     * @param dir     String
+     * @return String
      * @throws IOException
      */
     public static String saveBitmap2Sd(Context context, Bitmap bmp, String url, String dir) throws IOException {
@@ -226,10 +231,10 @@ public class CommonUtils {
     /**
      * 将文件流保存到SD卡中
      *
-     * @param context
-     * @param inputStream
-     * @param filePath
-     * @return
+     * @param context     Context
+     * @param inputStream InputStream
+     * @param filePath    String
+     * @return String
      * @throws IOException
      */
     private static String saveStream2SD(Context context, InputStream inputStream, String filePath) throws IOException {
@@ -261,7 +266,7 @@ public class CommonUtils {
                     bos.close();
                 }
             } catch (IOException e2) {
-                return null;
+                //
             }
         }
         return filePath;
@@ -270,12 +275,12 @@ public class CommonUtils {
     /**
      * 从缓存中读取图片
      *
-     * @param mContext
-     * @param url
-     * @return
+     * @param mContext Context
+     * @param url      String
+     * @return Bitmap
      */
     public static Bitmap getBitmapFromCache(Context mContext, String url) {
-        Bitmap bmp = null;
+        Bitmap bmp;
         String fileName = MD5Util.MD5Encode(url);
         FileInputStream fis = null;
         try {
@@ -289,6 +294,7 @@ public class CommonUtils {
                 try {
                     fis.close();
                 } catch (IOException e) {
+                    //
                 }
             }
         }
@@ -297,10 +303,10 @@ public class CommonUtils {
     /**
      * 将Bitmap流保存到缓存中
      *
-     * @param mContext
-     * @param url
-     * @param inputStream
-     * @return
+     * @param mContext    Context
+     * @param url         String
+     * @param inputStream InputStream
+     * @return String
      */
     public static String saveBitmap2Cache(Context mContext, String url, InputStream inputStream) {
         String fileName = MD5Util.MD5Encode(url);// 加密后的文件名
@@ -327,7 +333,7 @@ public class CommonUtils {
                     bos.close();
                 }
             } catch (IOException e2) {
-
+                //
             }
         }
         return mContext.getFilesDir() + "/" + fileName;

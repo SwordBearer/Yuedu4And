@@ -9,7 +9,8 @@ import org.json.JSONObject;
 import xmu.swordbearer.yuedu.core.music.MusicPlayerService;
 
 /**
- * Created by SwordBearer on 13-8-17.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-17.
  */
 public class Music extends BaseBean {
     private int id = -1;

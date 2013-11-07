@@ -33,14 +33,14 @@ public class DataInitializer {
             InputStream is = cxt.getAssets().open("city_code.json.txt");
             InputStreamReader ir = new InputStreamReader(is, "gb2312");
             BufferedReader br = new BufferedReader(ir);
-            String line = "";
+            String line;
             StringBuilder builder = new StringBuilder();
             while ((line = br.readLine()) != null) {
                 builder.append(line);
             }
             List<CityCode> cityList = parseJson(builder.toString());
             dbManager.addCity(cityList);
-        } catch (Exception e) {
+        } catch (Exception e) {//
         }
     }
 

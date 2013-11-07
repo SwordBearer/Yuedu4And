@@ -25,8 +25,8 @@ public class FeedList extends BaseBean {
     /**
      * 在尾部追加数据
      *
-     * @param ja
-     * @return
+     * @param ja JsonArray
+     * @return List
      */
     public int append(JSONArray ja) throws JSONException {
         FeedList tempList = FeedList.parseJSON(ja);
@@ -37,8 +37,8 @@ public class FeedList extends BaseBean {
     /**
      * 在头部添加新的数据
      *
-     * @param ja
-     * @return
+     * @param ja JSONArray
+     * @return List
      */
     public int prepend(JSONArray ja) throws JSONException {
         FeedList tempList = FeedList.parseJSON(ja);
@@ -57,7 +57,7 @@ public class FeedList extends BaseBean {
     /**
      * 获取第一条数据的ID
      *
-     * @return
+     * @return long
      */
     public long getFirstId() {
         long id = 0;
@@ -70,7 +70,7 @@ public class FeedList extends BaseBean {
     /**
      * 获取最后一条数据的ID
      *
-     * @return
+     * @return long
      */
     public long getLastId() {
         long id = 0;

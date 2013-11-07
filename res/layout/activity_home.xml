@@ -18,6 +18,7 @@
             android:layout_height="fill_parent"
             android:layout_width="260dp"
             android:layout_gravity="start">
+
         <fragment
                 android:name="xmu.swordbearer.yuedu.ui.fragment.MusicDashboard"
                 android:layout_height="wrap_content"

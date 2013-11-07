@@ -11,14 +11,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by SwordBearer on 13-8-12.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-12.
  */
 public class ArticleAPI extends ClientAPI {
     /**
      * 获取订阅内容
      *
      * @param flag     1 REFRESH，2 MORE
-     * @param listener
+     * @param listener null
      */
     public static void getFeeds(int flag, long startId, OnRequestListener listener) {
         Map<String, Object> params = new HashMap<String, Object>();

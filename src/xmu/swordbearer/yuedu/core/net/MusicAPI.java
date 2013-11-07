@@ -5,13 +5,14 @@ import android.util.Log;
 import org.json.JSONObject;
 
 /**
- * Created by SwordBearer on 13-8-18.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-18.
  */
 public class MusicAPI extends ClientAPI {
     /**
      * 获取每日音乐列表
      *
-     * @param listener
+     * @param listener null
      */
     public static void getDailyMusic(OnRequestListener listener) {
         try {

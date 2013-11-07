@@ -6,7 +6,8 @@ import android.media.AudioManager;
 import android.os.Build;
 
 /**
- * Created by SwordBearer on 13-8-19.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-19.
  */
 @TargetApi(Build.VERSION_CODES.FROYO)
 public class AudioFocusHelper implements AudioManager.OnAudioFocusChangeListener {

@@ -10,7 +10,6 @@ import android.util.Log;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
-import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpGet;
@@ -30,7 +29,7 @@ public class NetHelper {
     /**
      * 检测网络是否可用
      *
-     * @return
+     * @return boolean
      */
     public static boolean isNetworkConnected(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -69,7 +68,7 @@ public class NetHelper {
     /**
      * 判断给定字符串是否空白串。 空白串是指由空格、制表符、回车符、换行符组成的字符串 若输入字符串为null或空字符串，返回true
      *
-     * @param input
+     * @param input String
      * @return boolean
      */
     private static boolean isEmpty(String input) {
@@ -90,13 +89,12 @@ public class NetHelper {
     /**
      * 执行HttpPost方法
      *
-     * @param uri
-     * @param post_params
-     * @return
-     * @throws org.apache.http.client.ClientProtocolException
+     * @param uri         String
+     * @param post_params Map
+     * @return String
      * @throws java.io.IOException
      */
-    public static String httpPost(String uri, Map<String, Object> post_params) throws ClientProtocolException, IOException {
+    public static String httpPost(String uri, Map<String, Object> post_params) throws IOException {
         String result = null;
         Log.e("TEST", "访问的网址是 " + uri);
         HttpClient httpClient = new DefaultHttpClient();
@@ -129,10 +127,9 @@ public class NetHelper {
         ByteArrayOutputStream outStream = new ByteArrayOutputStream();
         int BUFFER_SIZE = 1024;
         byte[] data = new byte[BUFFER_SIZE];
-        int count = -1;
+        int count;
         while ((count = in.read(data, 0, BUFFER_SIZE)) != -1)
             outStream.write(data, 0, count);
-        data = null;
         return new String(outStream.toByteArray());
     }
 
@@ -140,7 +137,7 @@ public class NetHelper {
      * 生成post参数对
      *
      * @param map 提交的参数键值对
-     * @return
+     * @return ArrayList
      */
     private static ArrayList<NameValuePair> createNameValuePair(Map<String, Object> map) {
         ArrayList<NameValuePair> pairs = new ArrayList<NameValuePair>();
@@ -178,7 +175,7 @@ public class NetHelper {
      * 使用默认的HttpClient和HttpGet去访问网址,返回 Inpustream 数据流是为了XML或者Jsoup 的解析处理
      *
      * @param uri 访问的网址，可以带有参数
-     * @return返回 InputStream数据流，切记处理完成后要关闭连接
+     * @return 返回 InputStream数据流，切记处理完成后要关闭连接
      */
     private static InputStream _httpGet(String uri) {
         HttpClient httpClient = new DefaultHttpClient();

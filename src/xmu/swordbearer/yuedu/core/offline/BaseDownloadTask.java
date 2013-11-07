@@ -5,7 +5,8 @@ import android.content.Context;
 import xmu.swordbearer.yuedu.core.net.OnRequestListener;
 
 /**
- * Created by Administrator on 13-8-14.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-14.
  */
 public abstract class BaseDownloadTask {
     protected Context mContext;

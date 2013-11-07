@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.util.Log;
 
 /**
- * Created by SwordBearer on 13-8-14.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-14.
  */
 public class OfflineBroadcast extends BroadcastReceiver {
     private String TAG = "DownloadArticleTask";
@@ -22,6 +23,8 @@ public class OfflineBroadcast extends BroadcastReceiver {
             context.startService(startOffline);
         } else if (action.equals(Intent.ACTION_BOOT_COMPLETED)) {
             //重新计算离线任务时间
+        } else {
+
         }
     }
 }

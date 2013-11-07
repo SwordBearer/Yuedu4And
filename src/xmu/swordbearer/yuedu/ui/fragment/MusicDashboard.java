@@ -31,7 +31,8 @@ import xmu.swordbearer.yuedu.db.bean.Music;
 import xmu.swordbearer.yuedu.utils.UiUtils;
 
 /**
- * Created by SwordBearer on 13-8-17.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-17.
  */
 public class MusicDashboard extends Fragment implements View.OnClickListener {
     private ImageButton btnPrev, btnNext, btnPlay;

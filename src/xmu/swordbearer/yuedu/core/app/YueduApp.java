@@ -3,7 +3,8 @@ package xmu.swordbearer.yuedu.core.app;
 import android.app.Application;
 
 /**
- * Created by SwordBearer on 13-8-11.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-11.
  */
 public class YueduApp extends Application {
 

@@ -26,7 +26,8 @@ import xmu.swordbearer.yuedu.ui.activity.HomeActivity;
 import xmu.swordbearer.yuedu.utils.CommonUtils;
 
 /**
- * 在后台播放音乐 Created by SwordBearer on 13-8-17.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-17.
  */
 public class MusicPlayerService extends Service implements
         MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
@@ -37,10 +38,14 @@ public class MusicPlayerService extends Service implements
     private int initialCallState;
     private WifiManager.WifiLock mWifiLock;
     private AudioFocusHelper mAudioFocusHelper;
-    private Notification notification;
-    private MusicPlayerTimerTask timerTask;
+    private Notification notification;//通知栏
 
-    private int mSourceType;
+    private int mSourceType;//音乐文件的来源
+
+    //
+    private Timer mTimer;
+    private TimerTask mTimerTask;
+
 
     public static final String ACTION_MUSIC_START_PLAY = "action_music_start_play";
     public static final String ACTION_MUSIC_TOGGLE_PLAY = "action_music_toggle_play";
@@ -76,7 +81,6 @@ public class MusicPlayerService extends Service implements
         } else {
             mAudioFocusHelper = null;
         }
-        timerTask = new MusicPlayerTimerTask();
     }
 
     @Override
@@ -178,7 +182,7 @@ public class MusicPlayerService extends Service implements
         mWifiLock.release();
         if (mAudioFocusHelper != null)
             mAudioFocusHelper.requestFocus();
-        timerTask.stop();
+        stopTimer();
         sendAction(ACTION_MUSIC_STOP, null);
     }
 
@@ -186,7 +190,7 @@ public class MusicPlayerService extends Service implements
         if (mMediaPlayer == null)
             return;
         mMediaPlayer.pause();
-        timerTask.pause();
+        stopTimer();
         sendAction(ACTION_MUSIC_PAUSE, null);
     }
 
@@ -197,7 +201,7 @@ public class MusicPlayerService extends Service implements
         if (mAudioFocusHelper != null)
             mAudioFocusHelper.requestFocus();
         Log.e(TAG, "开始播放音乐 " + mMediaPlayer.getDuration());
-        timerTask.start();
+        startTimer();
     }
 
     private void seekTo(float percent) {
@@ -215,12 +219,10 @@ public class MusicPlayerService extends Service implements
             return;
         if (mMediaPlayer.isPlaying()) {
             mMediaPlayer.pause();
-            timerTask.pause();
-//            timerTask.stop();
+            stopTimer();
         } else {
             mMediaPlayer.start();
-//            timerTask.start();
-            timerTask.run();
+            startTimer();
         }
     }
 
@@ -276,35 +278,36 @@ public class MusicPlayerService extends Service implements
         // Log.e(TAG, " 缓存进度 " + percent);
     }
 
-    private class MusicPlayerTimerTask extends TimerTask {
-        private Timer mTimer;
+    private void updateUi() {
+        Log.e("TEST", "正在播放   " + mMediaPlayer.getCurrentPosition());
+    }
 
-        public MusicPlayerTimerTask() {
-            this.mTimer = new Timer();
+    private void startTimer() {
+        if (mTimer == null) {
+            mTimer = new Timer();
         }
-
-        public void start() {
-            Log.e(TAG, "MusicPlayerTimerTask 启动 ");
-            mTimer.purge();
-            mTimer.schedule(this, 1000);
+        if (mTimerTask == null) {
+            mTimerTask = new TimerTask() {
+                @Override
+                public void run() {
+                    updateUi();
+                }
+            };
         }
+        mTimer.schedule(mTimerTask, 1000, 1000);
+    }
 
-        public void pause() {
-            try {
-                mTimer.wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-
-        public void stop() {
+    private void stopTimer() {
+        if (mTimer != null) {
             mTimer.cancel();
+            mTimer = null;
         }
 
-        @Override
-        public void run() {
-            Log.e(TAG, "播放进度 " + mMediaPlayer.getCurrentPosition());
+        if (mTimerTask != null) {
+            mTimerTask.cancel();
+            mTimerTask = null;
         }
     }
+
 
 }

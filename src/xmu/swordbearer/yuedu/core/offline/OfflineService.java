@@ -16,7 +16,8 @@ import xmu.swordbearer.yuedu.core.net.OnRequestListener;
 import xmu.swordbearer.yuedu.ui.activity.HomeActivity;
 
 /**
- * Created by SwordBearer on 13-8-24.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-24.
  */
 public class OfflineService extends Service {
     public static String TAG = "OfflineService";
@@ -51,6 +52,7 @@ public class OfflineService extends Service {
         }
 
         String action = intent.getAction();
+        if (action == null) return -1;
         if (action.equals(ACTION_OFFLINE_START)) {
             startDownload();
         } else if (action.equals(ACTION_OFFLINE_END)) {
@@ -159,7 +161,7 @@ public class OfflineService extends Service {
         }
         long settledTime = prefs.getLong(PREF_OFFLINE, 7 * HOUR_IN_MILLIS);
         long now = System.currentTimeMillis();
-        long atTimeInMillis = 0;
+        long atTimeInMillis;
         if ((settledTime - now) < 0) {// 超过了
             atTimeInMillis = 24 * HOUR_IN_MILLIS + settledTime;
         } else {

@@ -77,7 +77,7 @@ public class DBManager {
     }
 
     public String queryCurrentCityCode() {
-        String curCode = "";
+        String curCode;
         String sql = "select code from cur_city";
         Cursor c = db.rawQuery(sql, null);
         if (c.moveToNext()) {

@@ -26,8 +26,10 @@ import xmu.swordbearer.yuedu.ui.fragment.MusicListFragment;
 import xmu.swordbearer.yuedu.ui.fragment.OfflineFragment;
 import xmu.swordbearer.yuedu.ui.fragment.SettingsFragment;
 
+
 /**
- * Created by SwordBearer on 13-8-21.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-21.
  */
 public class HomeActivity extends FragmentActivity implements
         ListView.OnItemClickListener {
@@ -175,7 +177,9 @@ public class HomeActivity extends FragmentActivity implements
             Log.e("TEST", "收到drawer 通知");
             if (intent == null)
                 return;
-            if (intent.getAction().equals(ACTION_TOGGLE_DRAWER)) {
+            String action = intent.getAction();
+            if (action == null) return;
+            if (action.equals(ACTION_TOGGLE_DRAWER)) {
                 toggoleDrawer();
             }
         }

@@ -9,7 +9,8 @@ import android.widget.Toast;
 import xmu.swordbearer.yuedu.R;
 
 /**
- * Created by SwordBearer on 13-8-12.
+ * @author SwordBearer  e-mail :ranxiedao@163.com
+ *         Created by SwordBearer on 13-8-12.
  */
 public class UiUtils {
     public static void showToast(Context ctx, int msgId) {

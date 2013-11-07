@@ -20,8 +20,7 @@ public class WeatherManager {
     public Weather getWeather(String cityCode) {
         String realAddr = String.format(STR_URL, cityCode);
         String json = queryWeather(realAddr);
-        Weather w = parseJson(json);
-        return w;
+        return parseJson(json);
     }
 
     private String queryWeather(String realAddr) {
@@ -31,7 +30,7 @@ public class WeatherManager {
             InputStreamReader input = new InputStreamReader(conn.getInputStream(), "utf-8");
             BufferedReader bufReader = new BufferedReader(input);
             StringBuilder builder = new StringBuilder();
-            String line = "";
+            String line;
             while ((line = bufReader.readLine()) != null) {
                 builder.append(line);
             }

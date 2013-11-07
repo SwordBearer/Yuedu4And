@@ -34,6 +34,13 @@ public class DBManager {
     }
 
     public static int addMusic(Context context, Music music) {
+        DBHelper dbHelper = DBHelper.getInstance(context);
+        Cursor tmp = dbHelper.queryByColumn(DBHelper.TBL_MUSIC, Music.MusicColumns._CLOUD_ID, music.getCloudId());
+        if (tmp.moveToFirst()) {//已经存在该音乐
+            dbHelper.close();
+            Log.e("TEST", "已经存在该音乐了");
+            return 1;
+        }
         ContentValues values = new ContentValues();
         values.put(Music.MusicColumns._TYPE, music.getType());
         values.put(Music.MusicColumns._NAME, music.getName());
@@ -44,11 +51,17 @@ public class DBManager {
         values.put(Music.MusicColumns._LYC_URL, music.getLyc_url());
         values.put(Music.MusicColumns._CLOUD_ID, music.getCloudId());
 
-        DBHelper dbHelper = DBHelper.getInstance(context);
         int result = dbHelper.insert(DBHelper.TBL_MUSIC, values);
 
         Log.e("TEST", "DBManager---------addMusic 保存音乐 " + result + " ************** " + music.getUrl());
 
+        dbHelper.close();
+        return result;
+    }
+
+    public static int deleteMusic(Context context, int id) {
+        DBHelper dbHelper = DBHelper.getInstance(context);
+        int result = dbHelper.delete(DBHelper.TBL_MUSIC, id);
         dbHelper.close();
         return result;
     }
@@ -60,9 +73,9 @@ public class DBManager {
     /**
      * 获取某一篇文章的详细内容
      *
-     * @param context
-     * @param articleId
-     * @return
+     * @param context Context
+     * @param id      int
+     * @return Article
      */
     public static Article getArticle(Context context, int id) {
         Article article = null;
@@ -89,8 +102,8 @@ public class DBManager {
     /**
      * 添加文章
      *
-     * @param context
-     * @param mArticle
+     * @param context  Context
+     * @param mArticle Article
      */
     public static int addArticle(Context context, Article mArticle) {
         ContentValues values = new ContentValues();
