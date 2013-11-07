@@ -11,8 +11,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a91df7f3-eb3b-4940-bc2a-89190dad4a2e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+    <list default="true" id="a91df7f3-eb3b-4940-bc2a-89190dad4a2e" name="Default" comment="fix music player bug:can not stop or replay a music;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/bean/Article.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/bean/Article.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ArticleAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ArticleAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/ArticleDetailsActivity.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/ArticleDetailsActivity.java" />
@@ -27,7 +26,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ClientAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ClientAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBHelper.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DataInitializer.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DataInitializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadArticleTask.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadArticleTask.java" />
@@ -41,7 +39,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/MD5Util.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/MD5Util.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/bean/Music.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/bean/Music.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/MusicAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/MusicAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicDashboard.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicDashboard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/MyLocation.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/MyLocation.java" />
@@ -58,14 +55,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/WeatherSeetingActivity.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/WeatherSeetingActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_home.xml" afterPath="$PROJECT_DIR$/res/layout/activity_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/dexedLibs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/dexedLibs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/dexedLibs2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/dexedLibs2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/frag_music_dashboard.xml" afterPath="$PROJECT_DIR$/res/layout/frag_music_dashboard.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable/selector_head_user.xml" afterPath="$PROJECT_DIR$/res/drawable/selector_head_user.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="e9781d40-b085-40f3-a065-b6599e5fc0c6" name="Failed commit: Default" comment="fix music player bug:can not stop or replay a music;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" />
     </list>
     <ignored path="Yuedu4And.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -138,98 +131,7 @@
     <favorites_list name="Yuedu4And" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="FeedList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/bean/FeedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="150" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataInitializer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DataInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="33" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1220">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NetHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/NetHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="15" selection-start="5723" selection-end="5723" vertical-scroll-proportion="0.0" vertical-offset="3140" max-vertical-offset="3640">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/HomeActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="22" selection-start="6183" selection-end="6183" vertical-scroll-proportion="0.0" vertical-offset="3180" max-vertical-offset="3380">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleListFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/ArticleListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="20" selection-start="3792" selection-end="3792" vertical-scroll-proportion="0.0" vertical-offset="1860" max-vertical-offset="3000">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Weather.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/Weather.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="22" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.0" vertical-offset="1500" max-vertical-offset="1840">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="14" selection-start="3561" selection-end="3561" vertical-scroll-proportion="0.0" vertical-offset="1960" max-vertical-offset="2420">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="22" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.0" vertical-offset="1520" max-vertical-offset="2260">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WeatherSeetingActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/WeatherSeetingActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="56" selection-start="4636" selection-end="4641" vertical-scroll-proportion="0.0" vertical-offset="2020" max-vertical-offset="2460">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MusicPlayerService.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="39" selection-start="6344" selection-end="6344" vertical-scroll-proportion="0.38630137" vertical-offset="2679" max-vertical-offset="5700">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -661,7 +563,11 @@
       <created>1383483148864</created>
       <updated>1383483148864</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix music player bug:can not stop or replay a music;">
+      <created>1383840638703</created>
+      <updated>1383840638703</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -685,8 +591,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8520578" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -695,16 +601,16 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5817575" sideWeight="0.5007587" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5354659" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53503895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.56395996" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.66295886" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8698554" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="350" y="126" width="974" height="578" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.032967035" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32408434" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39980826" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852808" sideWeight="0.0910518" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17502668" sideWeight="0.43604004" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17502668" sideWeight="0.46496108" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.77196884" sideWeight="0.49924126" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -905,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="22" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="2260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/WeatherSeetingActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="133" column="56" selection-start="4636" selection-end="4641" vertical-scroll-proportion="0.0" vertical-offset="2095" max-vertical-offset="2460">
@@ -922,6 +821,13 @@
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="170" column="39" selection-start="6344" selection-end="6344" vertical-scroll-proportion="0.38630137" vertical-offset="2679" max-vertical-offset="5700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="22" selection-start="2435" selection-end="2435" vertical-scroll-proportion="1.1415094" vertical-offset="1359" max-vertical-offset="2260">
           <folding />
         </state>
       </provider>
