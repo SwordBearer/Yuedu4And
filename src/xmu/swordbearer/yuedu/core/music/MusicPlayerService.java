@@ -40,7 +40,7 @@ public class MusicPlayerService extends Service implements
     private AudioFocusHelper mAudioFocusHelper;
     private Notification notification;//通知栏
 
-    private int mSourceType;//音乐文件的来源
+    private MediaSourceType mSourceType;//音乐文件的来源
 
     //
     private Timer mTimer;
@@ -56,8 +56,10 @@ public class MusicPlayerService extends Service implements
     public static final String EXTRA_MUSIC = "extra_music";
     public static final String EXTRA_SEEK_PERCENT = "extra_seek_percent";
 
-    public static final int SOURCE_TYPE_FILE = 0;
-    public static final int SOURCE_TYPE_STREAM = 1;
+
+    public enum MediaSourceType {
+        MEDIA_TYPE_FILE, MEDIA_TYPE_NET
+    }
 
     private PhoneStateListener listener = new PhoneStateListener() {
         @Override
@@ -76,6 +78,7 @@ public class MusicPlayerService extends Service implements
                 .listen(listener, PhoneStateListener.LISTEN_CALL_STATE);
         mWifiLock = ((WifiManager) getSystemService(Context.WIFI_SERVICE))
                 .createWifiLock(WifiManager.WIFI_MODE_FULL, "my_wifilock");
+        mWifiLock.setReferenceCounted(false);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
             mAudioFocusHelper = new AudioFocusHelper(this);
         } else {
@@ -103,7 +106,7 @@ public class MusicPlayerService extends Service implements
             if (music == null || music.getUrl() == null) {
                 return START_NOT_STICKY;
             }
-            play(music);
+            preparePlayer(music);
             initialCallState = mTelephonyManager.getCallState();
         } else if (action.equals(ACTION_MUSIC_SEEK_TO)) {
             float percent = intent.getFloatExtra(EXTRA_SEEK_PERCENT, -1);
@@ -114,29 +117,33 @@ public class MusicPlayerService extends Service implements
         return START_STICKY;
     }
 
-    private void play(final Music music) {
+    /**
+     * 初始化MediaPlayer的参数
+     *
+     * @param music Music
+     */
+    private void preparePlayer(final Music music) {
         Uri uri = null;
         String path = music.getPath();
         if (path != null) {
             File file = new File(path);
             if (CommonUtils.isSDCard() && file.exists()) {
                 uri = Uri.parse(path);
-                this.mSourceType = SOURCE_TYPE_FILE;
+                this.mSourceType = MediaSourceType.MEDIA_TYPE_FILE;
             }
         }
         if (uri == null) {
-            uri = Uri.parse(music.getUrl());
-            this.mSourceType = SOURCE_TYPE_STREAM;
+            uri = Uri.parse(java.net.URLEncoder.encode(music.getUrl()));
         }
         stop();
 
         mMediaPlayer = new MediaPlayer();
-        if (mSourceType == SOURCE_TYPE_STREAM) {
+        //如果是网络流的话，保持wifi连接
+        if (mSourceType == MediaSourceType.MEDIA_TYPE_NET) {
             mWifiLock.acquire();
         }
         mMediaPlayer.setWakeMode(this, PowerManager.PARTIAL_WAKE_LOCK);
         mMediaPlayer.setOnErrorListener(this);
-        mMediaPlayer.setOnBufferingUpdateListener(this);
         mMediaPlayer
                 .setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                     @Override
@@ -146,9 +153,13 @@ public class MusicPlayerService extends Service implements
                         sendAction(ACTION_MUSIC_START_PLAY, music);
                     }
                 });
+
+        mMediaPlayer.setOnBufferingUpdateListener(this);
         try {
             mMediaPlayer.reset();
+            Log.e("TEST", "播放的路径是" + uri);
             mMediaPlayer.setDataSource(this, uri);
+
             AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
             if (am.getStreamVolume(AudioManager.STREAM_MUSIC) != 0) {
                 mMediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
@@ -173,6 +184,9 @@ public class MusicPlayerService extends Service implements
         startForeground(1, notification);
     }
 
+    /**
+     * 停止播放
+     */
     private void stop() {
         if (mMediaPlayer == null)
             return;
@@ -181,11 +195,14 @@ public class MusicPlayerService extends Service implements
         mMediaPlayer = null;
         mWifiLock.release();
         if (mAudioFocusHelper != null)
-            mAudioFocusHelper.requestFocus();
+            mAudioFocusHelper.abandonFocus();
         stopTimer();
         sendAction(ACTION_MUSIC_STOP, null);
     }
 
+    /**
+     * 暂停播放
+     */
     private void pause() {
         if (mMediaPlayer == null)
             return;
@@ -194,6 +211,9 @@ public class MusicPlayerService extends Service implements
         sendAction(ACTION_MUSIC_PAUSE, null);
     }
 
+    /**
+     * 开始播放
+     */
     private void start() {
         if (mMediaPlayer == null)
             return;
@@ -204,6 +224,11 @@ public class MusicPlayerService extends Service implements
         startTimer();
     }
 
+    /**
+     * 跳到某个位置开始播放
+     *
+     * @param percent 播放百分比
+     */
     private void seekTo(float percent) {
         if (mMediaPlayer == null)
             return;
@@ -226,6 +251,12 @@ public class MusicPlayerService extends Service implements
         }
     }
 
+    /**
+     * 对外通知播放情况
+     *
+     * @param action String
+     * @param music  Music
+     */
     private void sendAction(String action, Music music) {
         Intent intent = new Intent(action);
         if (music != null) {
@@ -235,11 +266,21 @@ public class MusicPlayerService extends Service implements
         Log.e("TEST", "MUSIC_service 发送广播 " + action);
     }
 
+    /**
+     * 通知外部刷新界面
+     */
+    private void updateUi() {
+        Log.e("TEST", "正在播放   " + mMediaPlayer.getCurrentPosition());
+    }
+
     @Override
     public IBinder onBind(Intent intent) {
         return null;
     }
 
+    /**
+     * 当播放停止后，释放资源
+     */
     @Override
     public void onDestroy() {
         stop();
@@ -247,6 +288,11 @@ public class MusicPlayerService extends Service implements
         super.onDestroy();
     }
 
+    /**
+     * 手机声音被其他程序占用时
+     *
+     * @param focusChange
+     */
     public void audioFocusChanged(int focusChange) {
         switch (focusChange) {
             case AudioManager.AUDIOFOCUS_GAIN:
@@ -269,7 +315,9 @@ public class MusicPlayerService extends Service implements
 
     @Override
     public boolean onError(MediaPlayer mp, int what, int extra) {
+        Log.e("TEST", "出错了 艹 " + what);
         stop();
+
         return true;
     }
 
@@ -278,9 +326,6 @@ public class MusicPlayerService extends Service implements
         // Log.e(TAG, " 缓存进度 " + percent);
     }
 
-    private void updateUi() {
-        Log.e("TEST", "正在播放   " + mMediaPlayer.getCurrentPosition());
-    }
 
     private void startTimer() {
         if (mTimer == null) {

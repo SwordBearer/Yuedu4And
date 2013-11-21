@@ -3,6 +3,7 @@ package xmu.swordbearer.yuedu.db.bean;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -26,16 +27,24 @@ public class MusicListAdapter extends BaseListAdapter {
             convertView = mInflater.inflate(R.layout.listitem_music, null, false);
             assert convertView != null;
             holder.tvName = (TextView) convertView.findViewById(R.id.listitem_music_name);
+            holder.tvAuthor = (TextView) convertView.findViewById(R.id.listitem_music_author);
+            holder.ivDetails = (ImageView) convertView.findViewById(R.id.listitem_music_details);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
         Music music = (Music) mDataList.get(position);
         holder.tvName.setText(music.getName());
+        holder.tvAuthor.setText(music.getAuthor());
+        holder.ivDetails.setOnClickListener(new View.OnClickListener() {
+            public void onClick(android.view.View view) {
+            }
+        });
         return convertView;
     }
 
     private class ViewHolder {
-        TextView tvName;
+        TextView tvName, tvAuthor;
+        ImageView ivDetails;
     }
 }

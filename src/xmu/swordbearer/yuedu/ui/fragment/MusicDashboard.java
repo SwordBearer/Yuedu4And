@@ -22,6 +22,7 @@ import org.json.JSONException;
 import java.util.List;
 
 import xmu.swordbearer.yuedu.R;
+import xmu.swordbearer.yuedu.core.app.YueduApp;
 import xmu.swordbearer.yuedu.core.music.MusicPlayerService;
 import xmu.swordbearer.yuedu.core.net.MusicAPI;
 import xmu.swordbearer.yuedu.core.net.NetHelper;
@@ -140,10 +141,7 @@ public class MusicDashboard extends Fragment implements View.OnClickListener {
         Log.d("FUCK", "总音乐数 " + musicList.size());
         Music music = musicList.get(0);//获取最新的一条音乐
         Log.e("TEST", "dashboard---------BEFORE startService   " + musicList.size());
-        Intent startPlay = new Intent(getActivity(), MusicPlayerService.class);
-        startPlay.putExtra(MusicPlayerService.EXTRA_MUSIC, music);
-        startPlay.setAction(MusicPlayerService.ACTION_MUSIC_START_PLAY);
-        getActivity().startService(startPlay);
+        YueduApp.startPlay(getActivity(), music);
         Log.e("TEST", "dashboard---------AFTER startService");
     }
 

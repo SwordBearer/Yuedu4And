@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,6 +26,7 @@ import xmu.swordbearer.yuedu.ui.fragment.BasePageFragment;
 import xmu.swordbearer.yuedu.ui.fragment.MusicListFragment;
 import xmu.swordbearer.yuedu.ui.fragment.OfflineFragment;
 import xmu.swordbearer.yuedu.ui.fragment.SettingsFragment;
+import xmu.swordbearer.yuedu.utils.UiUtils;
 
 
 /**
@@ -35,6 +37,7 @@ public class HomeActivity extends FragmentActivity implements
         ListView.OnItemClickListener {
     public static final String ACTION_TOGGLE_DRAWER = "action_toggle_drawer";
 
+    private long firstTime = 0;//第一次按下返回键的时间
     private String[] navItems;
     private View leftNav;
     private DrawerLayout drawer;
@@ -121,6 +124,23 @@ public class HomeActivity extends FragmentActivity implements
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(drawerReceiver);
+    }
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK) {
+            long secondTime = System.currentTimeMillis();
+            //如果两次按键时间间隔大于800毫秒，则不退出
+            if (secondTime - firstTime > 800) {
+                UiUtils.showToast(HomeActivity.this, R.string.quit_hint);
+                //更新firstTime
+                firstTime = secondTime;
+                return true;
+            } else {//否则退出程序
+                System.exit(0);
+            }
+        }
+        return super.onKeyUp(keyCode, event);
     }
 
     @Override

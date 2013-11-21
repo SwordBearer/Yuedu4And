@@ -6,15 +6,13 @@ import android.provider.BaseColumns;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import xmu.swordbearer.yuedu.core.music.MusicPlayerService;
-
 /**
  * @author SwordBearer  e-mail :ranxiedao@163.com
  *         Created by SwordBearer on 13-8-17.
  */
 public class Music extends BaseBean {
     private int id = -1;
-    private int type;//0 1 下载 收藏
+    private int type;//0 1 下载 收藏 deprecated
     private String name;//名称
     private String details;//详细
     private String author;//作者
@@ -30,7 +28,7 @@ public class Music extends BaseBean {
 
     public Music(Cursor cursor) throws Exception {
         id = cursor.getInt(0);
-        type = cursor.getInt(1);
+//        type = cursor.getInt(1);
         name = cursor.getString(2);
         details = cursor.getString(3);
         author = cursor.getString(4);
@@ -41,7 +39,7 @@ public class Music extends BaseBean {
     }
 
     public Music(JSONObject jo) throws JSONException {
-        this.type = MusicPlayerService.SOURCE_TYPE_STREAM;
+//        this.type = MusicPlayerService.SOURCE_TYPE_STREAM;
         this.name = jo.getString("name");
         this.author = jo.getString("author");
         this.details = jo.getString("details");
