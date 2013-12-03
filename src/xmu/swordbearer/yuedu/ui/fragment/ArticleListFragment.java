@@ -16,13 +16,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 import xmu.swordbearer.yuedu.R;
+import xmu.swordbearer.yuedu.adapter.FeedListAdapter;
+import xmu.swordbearer.yuedu.bean.Article;
+import xmu.swordbearer.yuedu.bean.FeedList;
 import xmu.swordbearer.yuedu.core.net.ArticleAPI;
 import xmu.swordbearer.yuedu.core.net.ClientAPI;
 import xmu.swordbearer.yuedu.core.net.NetHelper;
 import xmu.swordbearer.yuedu.core.net.OnRequestListener;
-import xmu.swordbearer.yuedu.db.bean.Article;
-import xmu.swordbearer.yuedu.db.bean.FeedList;
-import xmu.swordbearer.yuedu.db.bean.FeedListAdapter;
 import xmu.swordbearer.yuedu.ui.activity.ArticleDetailsActivity;
 import xmu.swordbearer.yuedu.utils.CommonUtils;
 import xmu.swordbearer.yuedu.utils.UiUtils;

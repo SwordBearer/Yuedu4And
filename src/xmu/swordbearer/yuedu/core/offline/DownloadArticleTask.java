@@ -8,11 +8,11 @@ import org.json.JSONException;
 
 import java.io.IOException;
 
+import xmu.swordbearer.yuedu.bean.Article;
+import xmu.swordbearer.yuedu.bean.FeedList;
 import xmu.swordbearer.yuedu.core.net.ArticleAPI;
 import xmu.swordbearer.yuedu.core.net.OnRequestListener;
 import xmu.swordbearer.yuedu.db.DBManager;
-import xmu.swordbearer.yuedu.db.bean.Article;
-import xmu.swordbearer.yuedu.db.bean.FeedList;
 import xmu.swordbearer.yuedu.utils.CommonUtils;
 
 /**

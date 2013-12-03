@@ -1,6 +1,7 @@
 package xmu.swordbearer.yuedu.ui.fragment;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +13,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import xmu.swordbearer.yuedu.R;
+import xmu.swordbearer.yuedu.adapter.MusicListAdapter;
+import xmu.swordbearer.yuedu.bean.Music;
 import xmu.swordbearer.yuedu.core.app.YueduApp;
 import xmu.swordbearer.yuedu.db.DBManager;
-import xmu.swordbearer.yuedu.db.bean.Music;
-import xmu.swordbearer.yuedu.db.bean.MusicListAdapter;
 
 /**
  * @author SwordBearer  e-mail :ranxiedao@163.com
@@ -68,6 +69,7 @@ public class MusicListFragment extends BasePageFragment implements AdapterView.O
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Music m = musicList.get(i);
+        Log.e("TEST", "单击播放 " + i);
         if (null != m) {
             YueduApp.startPlay(getActivity(), m);
         }

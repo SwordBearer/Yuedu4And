@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import xmu.swordbearer.yuedu.db.bean.Music;
+import xmu.swordbearer.yuedu.bean.Music;
 import xmu.swordbearer.yuedu.ui.activity.HomeActivity;
 import xmu.swordbearer.yuedu.utils.CommonUtils;
 

@@ -4,14 +4,50 @@
     android:orientation="horizontal"
     android:gravity="left|center_vertical"
     android:minHeight="40dp"
+    android:paddingRight="16dp"
+    android:descendantFocusability="blocksDescendants"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/listitem_music_download"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:padding="6dp"
+            android:contentDescription="@null"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_download"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/listitem_music_dowloadProgress"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:text="@string/app_name"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <ProgressBar
+            android:id="@+id/listitem_music_download"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:indeterminate="false"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
         android:orientation="vertical"
         android:gravity="left|center_vertical"
         android:layout_weight="1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
         <TextView
@@ -32,5 +68,6 @@
         android:id="@+id/listitem_music_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@null"
         android:src="@drawable/arrow" />
 </LinearLayout>

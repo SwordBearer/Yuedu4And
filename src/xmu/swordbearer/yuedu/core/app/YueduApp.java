@@ -15,8 +15,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import xmu.swordbearer.yuedu.bean.Music;
 import xmu.swordbearer.yuedu.core.music.MusicPlayerService;
-import xmu.swordbearer.yuedu.db.bean.Music;
 
 /**
  * @author SwordBearer  e-mail :ranxiedao@163.com
@@ -43,17 +43,22 @@ public class YueduApp extends Application {
         context.startService(startPlay);
     }
 
-
-    public static String downloadMusic(String url, String path) {
+    /**
+     * 开始下载音乐
+     *
+     * @param music
+     * @return 音乐的保存路径
+     */
+    public static String downloadMusic(Music music) {
         HttpClient client = new DefaultHttpClient();
-        HttpGet httpGet = new HttpGet(url);
+        HttpGet httpGet = new HttpGet(music.getUrl());
+        String path = music.getPath();
         File file = new File(path);
+        file.mkdirs();
         try {
             HttpResponse response = client.execute(httpGet);
-
             InputStream in = response.getEntity().getContent();
-
-            FileOutputStream out = new FileOutputStream(new File(path));
+            FileOutputStream out = new FileOutputStream(file);
             byte[] b = new byte[1024];
             int len;
             while ((len = in.read(b)) != -1) {
@@ -61,7 +66,6 @@ public class YueduApp extends Application {
             }
             in.close();
             out.close();
-
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

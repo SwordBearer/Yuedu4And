@@ -17,7 +17,10 @@
         android:background="@color/drawer_bg"
         android:layout_height="fill_parent"
         android:layout_width="260dp"
-        android:layout_gravity="start">
+        android:layout_gravity="start"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true">
 
         <fragment
             android:name="xmu.swordbearer.yuedu.ui.fragment.MusicDashboard"

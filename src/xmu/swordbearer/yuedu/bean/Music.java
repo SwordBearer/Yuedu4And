@@ -1,10 +1,14 @@
-package xmu.swordbearer.yuedu.db.bean;
+package xmu.swordbearer.yuedu.bean;
 
 import android.database.Cursor;
+import android.os.Environment;
 import android.provider.BaseColumns;
+import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.File;
 
 /**
  * @author SwordBearer  e-mail :ranxiedao@163.com
@@ -20,6 +24,7 @@ public class Music extends BaseBean {
     private String url;//网络存放地址
     private String lyc_url;//歌词的地址
     private int cloudId;//云端ID
+    private long size;//文件大小
 
 
     public Music() {
@@ -60,6 +65,39 @@ public class Music extends BaseBean {
         public static final String _CLOUD_ID = "cloudId";
     }
 
+    /**
+     * 生成音乐文件的保存路径
+     *
+     * @return
+     */
+    public String generateFilePath() {
+        String url = this.url;
+        if (this.url == null) {
+            return null;
+        }
+        String extend = url.substring(url.lastIndexOf("."), url.length());
+        String dir = Environment.getExternalStorageDirectory().getAbsolutePath() +
+                File.separator + "yuedu/music/";
+        String path = dir + this.name + extend;
+        this.path = path;
+        Log.e("TST", "保存的音乐的文件路径是 " + path);
+        return path;
+    }
+
+    /**
+     * 查看音乐是否已经完成下载
+     *
+     * @return
+     */
+    public boolean isDownloaded() {
+        String path = this.path;
+        if (null == path) {
+            path = generateFilePath();
+        }
+        File file = new File(path);
+        return file.exists();
+    }
+
     public int getId() {
         return id;
     }
@@ -81,6 +119,8 @@ public class Music extends BaseBean {
     }
 
     public String getPath() {
+        if (this.path == null)
+            generateFilePath();
         return path;
     }
 

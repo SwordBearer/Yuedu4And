@@ -22,13 +22,13 @@ import org.json.JSONException;
 import java.util.List;
 
 import xmu.swordbearer.yuedu.R;
+import xmu.swordbearer.yuedu.bean.Music;
 import xmu.swordbearer.yuedu.core.app.YueduApp;
 import xmu.swordbearer.yuedu.core.music.MusicPlayerService;
 import xmu.swordbearer.yuedu.core.net.MusicAPI;
 import xmu.swordbearer.yuedu.core.net.NetHelper;
 import xmu.swordbearer.yuedu.core.net.OnRequestListener;
 import xmu.swordbearer.yuedu.db.DBManager;
-import xmu.swordbearer.yuedu.db.bean.Music;
 import xmu.swordbearer.yuedu.utils.UiUtils;
 
 /**

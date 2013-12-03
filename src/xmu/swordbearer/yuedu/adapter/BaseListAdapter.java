@@ -1,4 +1,4 @@
-package xmu.swordbearer.yuedu.db.bean;
+package xmu.swordbearer.yuedu.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

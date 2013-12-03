@@ -1,4 +1,4 @@
-package xmu.swordbearer.yuedu.db.bean;
+package xmu.swordbearer.yuedu.bean;
 
 public class Image {
     public String url;
@@ -6,6 +6,7 @@ public class Image {
     public int height;
     public int mode = 1;
     public String format = "png";
+    public long size;
 
     public Image(String url, int w, int h) {
         this.url = url;

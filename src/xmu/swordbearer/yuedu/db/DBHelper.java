@@ -7,8 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-import xmu.swordbearer.yuedu.db.bean.Article;
-import xmu.swordbearer.yuedu.db.bean.Music;
+import xmu.swordbearer.yuedu.bean.Article;
+import xmu.swordbearer.yuedu.bean.Music;
 
 /**
  * @author SwordBearer  e-mail :ranxiedao@163.com

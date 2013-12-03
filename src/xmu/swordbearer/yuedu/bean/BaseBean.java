@@ -1,4 +1,4 @@
-package xmu.swordbearer.yuedu.db.bean;
+package xmu.swordbearer.yuedu.bean;
 
 import java.io.Serializable;
 

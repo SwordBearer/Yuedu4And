@@ -7,8 +7,8 @@ import android.util.Log;
 import android.widget.ImageView;
 
 import xmu.swordbearer.yuedu.R;
+import xmu.swordbearer.yuedu.bean.Image;
 import xmu.swordbearer.yuedu.core.net.PictureAPI;
-import xmu.swordbearer.yuedu.db.bean.Image;
 import xmu.swordbearer.yuedu.utils.UiUtils;
 
 public class ImageAsyncTask extends AsyncTask<String, Void, Bitmap> {

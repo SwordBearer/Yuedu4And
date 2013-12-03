@@ -1,4 +1,4 @@
-package xmu.swordbearer.yuedu.db.bean;
+package xmu.swordbearer.yuedu.bean;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -8,8 +8,8 @@ import android.util.Log;
 import java.util.ArrayList;
 import java.util.List;
 
-import xmu.swordbearer.yuedu.db.bean.Article;
-import xmu.swordbearer.yuedu.db.bean.Music;
+import xmu.swordbearer.yuedu.bean.Article;
+import xmu.swordbearer.yuedu.bean.Music;
 
 /**
  * @author SwordBearer  e-mail :ranxiedao@163.com

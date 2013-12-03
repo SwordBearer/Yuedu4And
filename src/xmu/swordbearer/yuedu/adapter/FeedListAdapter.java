@@ -1,4 +1,4 @@
-package xmu.swordbearer.yuedu.db.bean;
+package xmu.swordbearer.yuedu.adapter;
 
 import android.content.Context;
 import android.view.View;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import xmu.swordbearer.yuedu.R;
+import xmu.swordbearer.yuedu.bean.Article;
 
 /**
  * @author SwordBearer  e-mail :ranxiedao@163.com
