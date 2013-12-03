@@ -18,10 +18,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a91df7f3-eb3b-4940-bc2a-89190dad4a2e" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\codes\github\Yuedu4And\res\drawable-mdpi\arrow.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\codes\github\Yuedu4And\res\drawable-mdpi\arrow_focus.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\codes\github\Yuedu4And\res\drawable-mdpi\arrow_rest.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\codes\github\Yuedu4And\res\values\dimen.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ArticleAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ArticleAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/ArticleDetailsActivity.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/ArticleDetailsActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/ArticleListFragment.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/ArticleListFragment.java" />
@@ -33,7 +29,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ClientAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ClientAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBHelper.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBHelper.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DataInitializer.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DataInitializer.java" />
@@ -44,7 +39,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/ImageAsyncTask.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/ImageAsyncTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/MD5Util.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/MD5Util.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/MusicAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/MusicAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicDashboard.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicDashboard.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/MyLocation.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/MyLocation.java" />
@@ -61,18 +55,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/WeatherSeetingActivity.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/WeatherSeetingActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/activity_home.xml" afterPath="$PROJECT_DIR$/res/layout/activity_home.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/frag_music_list.xml" afterPath="$PROJECT_DIR$/res/layout/frag_music_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/listitem_music.xml" afterPath="$PROJECT_DIR$/res/layout/listitem_music.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\src\xmu\swordbearer\yuedu\db\bean\Article.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Article.java" />
-      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\src\xmu\swordbearer\yuedu\db\bean\BaseBean.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/BaseBean.java" />
-      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\src\xmu\swordbearer\yuedu\db\bean\BaseListAdapter.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/adapter/BaseListAdapter.java" />
-      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\src\xmu\swordbearer\yuedu\db\bean\FeedList.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/FeedList.java" />
-      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\src\xmu\swordbearer\yuedu\db\bean\FeedListAdapter.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/adapter/FeedListAdapter.java" />
-      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\src\xmu\swordbearer\yuedu\db\bean\Image.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Image.java" />
-      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\src\xmu\swordbearer\yuedu\db\bean\Music.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Music.java" />
-      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\src\xmu\swordbearer\yuedu\db\bean\MusicListAdapter.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/adapter/MusicListAdapter.java" />
     </list>
     <list id="e9781d40-b085-40f3-a065-b6599e5fc0c6" name="Failed commit: Default" comment="fix music player bug:can not stop or replay a music;" />
     <ignored path="Yuedu4And.iws" />
@@ -619,7 +601,11 @@
       <created>1385056768620</created>
       <updated>1385056768620</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fix wifiLock cannot release ;&#10;found MediaPlayer cannot play Uri which has Chinese Characters；&#10;change MusicListView layout file;&#10;">
+      <created>1386087337950</created>
+      <updated>1386087337950</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="3">
@@ -649,7 +635,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8519337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.312667" sideWeight="0.6407119" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1173,7 +1159,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="535" selection-end="535" vertical-scroll-proportion="0.31914893" vertical-offset="0" max-vertical-offset="1404">
+        <state line="9" column="21" selection-start="370" selection-end="370" vertical-scroll-proportion="0.21350364" vertical-offset="45" max-vertical-offset="1404">
           <folding />
         </state>
       </provider>
