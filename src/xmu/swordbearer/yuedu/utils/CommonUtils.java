@@ -339,4 +339,15 @@ public class CommonUtils {
         return mContext.getFilesDir() + "/" + fileName;
     }
 
+//    /**
+//     * save file into sd-card
+//     *
+//     * @param inStream
+//     * @param filePath
+//     * @return
+//     */
+//    public static String saveFile2SDCard(InputStream inStream, String filePath) {
+//
+//    }
+
 }

@@ -63,5 +63,4 @@ public class DownloadMusicTask extends BaseDownloadTask {
         });
         thread.start();
     }
-
 }

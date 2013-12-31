@@ -5,11 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -17,6 +12,7 @@ import java.io.InputStream;
 
 import xmu.swordbearer.yuedu.bean.Music;
 import xmu.swordbearer.yuedu.core.music.MusicPlayerService;
+import xmu.swordbearer.yuedu.core.net.NetHelper;
 
 /**
  * @author SwordBearer  e-mail :ranxiedao@163.com
@@ -50,14 +46,15 @@ public class YueduApp extends Application {
      * @return 音乐的保存路径
      */
     public static String downloadMusic(Music music) {
-        HttpClient client = new DefaultHttpClient();
-        HttpGet httpGet = new HttpGet(music.getUrl());
+//        HttpClient client = new DefaultHttpClient();
+//        HttpGet httpGet = new HttpGet(music.getUrl());
         String path = music.getPath();
         File file = new File(path);
         file.mkdirs();
         try {
-            HttpResponse response = client.execute(httpGet);
-            InputStream in = response.getEntity().getContent();
+//            HttpResponse response = client.execute(httpGet);
+//            InputStream in = response.getEntity().getContent();
+            InputStream in = NetHelper.httpGetStream(music.getUrl());
             FileOutputStream out = new FileOutputStream(file);
             byte[] b = new byte[1024];
             int len;

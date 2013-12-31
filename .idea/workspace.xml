@@ -18,43 +18,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a91df7f3-eb3b-4940-bc2a-89190dad4a2e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ArticleAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ArticleAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/ArticleDetailsActivity.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/ArticleDetailsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/ArticleListFragment.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/ArticleListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/widget/ArticleWebView.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/widget/ArticleWebView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/AudioFocusHelper.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/AudioFocusHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/BaseDownloadTask.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/BaseDownloadTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/BecomeNoisyReceiver.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/BecomeNoisyReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/CityCode.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/CityCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ClientAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ClientAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/task/DownloadMusic.java" />
+      <change type="DELETED" beforePath="E:\codes\github\Yuedu4And\.idea\libraries\dexedLibs.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\codes\github\Yuedu4And\.idea\libraries\dexedLibs2.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\codes\github\Yuedu4And\.idea\libraries\libs2.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBHelper.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DataInitializer.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DataInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadArticleTask.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadArticleTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadMusicTask.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadMusicTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadPictureTask.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadPictureTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/HomeActivity.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/HomeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/ImageAsyncTask.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/ImageAsyncTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/MD5Util.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/MD5Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/MusicAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/MusicAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/MyLocation.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/MyLocation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/NetHelper.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/NetHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/OfflineBroadcast.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/OfflineBroadcast.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/OfflineFragment.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/OfflineFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/OfflineService.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/OfflineService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/OnRequestListener.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/OnRequestListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/PictureAPI.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/PictureAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/SettingsFragment.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/SettingsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/UiUtils.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/UiUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/Weather.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/Weather.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherDesc.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherDesc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherManager.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/WeatherSeetingActivity.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/WeatherSeetingActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Music.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Music.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Yuedu4And.iml" afterPath="$PROJECT_DIR$/Yuedu4And.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java" afterPath="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\codes\github\Yuedu4And\.idea\libraries\libs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
     </list>
     <list id="e9781d40-b085-40f3-a065-b6599e5fc0c6" name="Failed commit: Default" comment="fix music player bug:can not stop or replay a music;" />
     <ignored path="Yuedu4And.iws" />
@@ -163,7 +138,110 @@
     <favorites_list name="Yuedu4And" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="MusicListAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/adapter/MusicListAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="59" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;class#MusicListAdapter#0" expanded="false" />
+                <element signature="class#1478:1584" expanded="false" />
+                <element signature="method#onClick#0;class#1478:1584" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicListFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="0" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="1440">
+              <folding>
+                <element signature="docComment;class#MusicListFragment#0" expanded="false" />
+                <element signature="e#986#993#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DownloadMusic.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/task/DownloadMusic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="53" selection-start="281" selection-end="281" vertical-scroll-proportion="0.16457143" vertical-offset="0" max-vertical-offset="1602">
+              <folding>
+                <element signature="method#DownloadMusic#0;class#DownloadMusic#0" expanded="true" />
+                <element signature="method#doInBackground#0;class#DownloadMusic#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Music.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Music.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="156" column="36" selection-start="3874" selection-end="3874" vertical-scroll-proportion="0.0" vertical-offset="524" max-vertical-offset="1548">
+              <folding>
+                <element signature="e#3562#3563#0" expanded="true" />
+                <element signature="e#3594#3595#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="341" column="3" selection-start="10365" selection-end="10584" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1260">
+              <folding>
+                <marker date="1386359241686" expanded="true" signature="10368:10489" placeholder="/**...*/" />
+                <marker date="1386359241686" expanded="true" signature="10572:10584" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/NetHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="189" column="13" selection-start="6270" selection-end="6270" vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1458">
+              <folding>
+                <element signature="method#httpPost#0;class#NetHelper#0" expanded="true" />
+                <element signature="method#httpGetStream#0;class#NetHelper#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DownloadMusicTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadMusicTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="0" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;class#DownloadMusicTask#0" expanded="false" />
+                <element signature="method#DownloadMusicTask#0;class#DownloadMusicTask#0" expanded="false" />
+                <element signature="method#onError#0;class#1040:1813" expanded="false" />
+                <element signature="e#1844#1997#0" expanded="false" />
+                <element signature="e#1986#1987#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YueduApp.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="4" selection-start="1298" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="method#downloadMusic#0;class#YueduApp#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -197,14 +275,12 @@
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/OfflineService.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/WeatherManager.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/bean/FeedList.java" />
-        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DataInitializer.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/weather/DBManager.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/bean/Music.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/BaseActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/frag_music_dashboard.xml" />
-        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/BasePageFragment.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicDashboard.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/HomeActivity.java" />
@@ -214,16 +290,20 @@
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/MusicPlayerService.java" />
         <option value="$PROJECT_DIR$/res/layout/frag_music_list.xml" />
         <option value="$PROJECT_DIR$/res/layout/activity_home.xml" />
-        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Music.java" />
-        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadMusicTask.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/BaseDownloadTask.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadArticleTask.java" />
-        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Image.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Article.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java" />
         <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/adapter/MusicListAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/listitem_music.xml" />
+        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/BasePageFragment.java" />
+        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java" />
+        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadMusicTask.java" />
+        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/task/DownloadFile.java" />
+        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Music.java" />
+        <option value="$PROJECT_DIR$/src/xmu/swordbearer/yuedu/task/DownloadMusic.java" />
       </list>
     </option>
   </component>
@@ -231,8 +311,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-42" />
+    <option name="y" value="66" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
@@ -299,6 +379,190 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yuedu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yuedu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yuedu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yuedu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yuedu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="net" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yuedu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="music" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yuedu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Yuedu4And" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yuedu" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -341,11 +605,12 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+        <subPane subId="Failed commit: Default" />
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -353,11 +618,11 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="AndroidProguardConfigPath" value="E:\codes\github\Yuedu4And\proguard-project.txt" />
     <property name="ExportedApkPath" value="E:\codes\github\Yuedu4And\Yuedu4And.apk" />
-    <property name="options.lastSelected" value="reference.settings.ide.settings.notifications" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="ExportedModule" value="Yuedu4And" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/android-support-v7-appcompat.jar!/" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -629,36 +894,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-42" y="66" width="1936" height="1066" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8519337" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.312667" sideWeight="0.6407119" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707182" sideWeight="0.7889142" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.581741" sideWeight="0.5007587" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2099359" sideWeight="0.6872928" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53503895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6596685" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.67292815" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="350" y="126" width="974" height="578" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.65856355" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6722038" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="350" y="126" width="974" height="578" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3237569" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.39980826" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32799146" sideWeight="0.0910518" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2099359" sideWeight="0.22803114" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.7690608" sideWeight="0.49924126" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2099359" sideWeight="0.3127072" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.76854926" sideWeight="0.49924126" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.032967035" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.312667" sideWeight="0.6407119" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707182" sideWeight="0.7889142" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -718,58 +983,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/android/support/v4/app/FragmentActivity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="165" selection-end="165" vertical-scroll-proportion="0.09966777" vertical-offset="0" max-vertical-offset="2214" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/left_nav_icon_music.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/listitem_left_nav.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="664" selection-end="664" vertical-scroll-proportion="-10.551724" vertical-offset="0" max-vertical-offset="522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/view_left_nav.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="266" selection-end="266" vertical-scroll-proportion="0.15789473" vertical-offset="0" max-vertical-offset="684">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="438" selection-end="438" vertical-scroll-proportion="0.30294532" vertical-offset="0" max-vertical-offset="713">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/drawable/style_player_progressbar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="555" selection-end="555" vertical-scroll-proportion="0.35343617" vertical-offset="0" max-vertical-offset="713" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-18/android.jar!/android/content/Intent.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="388" column="34" selection-start="28068" selection-end="28068" vertical-scroll-proportion="0.33295965" vertical-offset="6417" max-vertical-offset="9576" />
@@ -792,9 +1005,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="30" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.35545024" vertical-offset="348" max-vertical-offset="1224">
-          <folding />
-        </state>
+        <state line="36" column="30" selection-start="1289" selection-end="1289" vertical-scroll-proportion="0.35545024" vertical-offset="348" max-vertical-offset="1224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/frag_music_dashboard.xml">
@@ -802,14 +1013,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="51" selection-start="1580" selection-end="1580" vertical-scroll-proportion="-9.310345" vertical-offset="468" max-vertical-offset="1710">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/BasePageFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684" />
+        <state line="41" column="51" selection-start="1580" selection-end="1580" vertical-scroll-proportion="-9.310345" vertical-offset="468" max-vertical-offset="1710" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/UiUtils.java">
@@ -819,9 +1023,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="372" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <folding />
-        </state>
+        <state line="9" column="27" selection-start="372" selection-end="381" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-18/android.jar!/org/json/JSONObject.class">
@@ -834,11 +1036,6 @@
         <state line="19" column="46" selection-start="506" selection-end="506" vertical-scroll-proportion="0.30857143" vertical-offset="0" max-vertical-offset="875" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="54" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.41142857" vertical-offset="0" max-vertical-offset="1062" />
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-18/android.jar!/android/view/View.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1090" column="45" selection-start="49787" selection-end="49825" vertical-scroll-proportion="0.0" vertical-offset="19388" max-vertical-offset="20718" />
@@ -847,11 +1044,6 @@
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-18/android.jar!/android/media/MediaPlayer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="0" selection-start="3750" selection-end="3750" vertical-scroll-proportion="-39.857143" vertical-offset="0" max-vertical-offset="3294" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/NetHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="13" selection-start="3204" selection-end="3204" vertical-scroll-proportion="-15.428572" vertical-offset="108" max-vertical-offset="1332" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ClientAPI.java">
@@ -909,16 +1101,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/music/AudioFocusHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="1158" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
-          <folding />
-        </state>
+        <state line="34" column="31" selection-start="1158" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/base_toast_bg.9.png">
-      <provider editor-type-id="images">
+      <provider selected="true" editor-type-id="ninepatcheditor">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="ninepatcheditor">
+      <provider editor-type-id="images">
         <state />
       </provider>
     </entry>
@@ -954,25 +1144,17 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="524" selection-end="524" vertical-scroll-proportion="0.29787233" vertical-offset="0" max-vertical-offset="846">
-          <folding />
-        </state>
+        <state line="14" column="42" selection-start="524" selection-end="524" vertical-scroll-proportion="0.29787233" vertical-offset="0" max-vertical-offset="846" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/activity/HomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="41" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.23771429" vertical-offset="674" max-vertical-offset="2106">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="52" column="41" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.23771429" vertical-offset="674" max-vertical-offset="2106" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/ArticleAPI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="54" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1710">
-          <folding />
-        </state>
+        <state line="28" column="54" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1710" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/frag_music_list.xml">
@@ -980,178 +1162,37 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="373" selection-end="373" vertical-scroll-proportion="0.79646015" vertical-offset="0" max-vertical-offset="774">
-          <folding />
-        </state>
+        <state line="10" column="30" selection-start="373" selection-end="373" vertical-scroll-proportion="0.79646015" vertical-offset="0" max-vertical-offset="774" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-18/android.jar!/java/util/List.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="6" selection-start="543" selection-end="543" vertical-scroll-proportion="0.45257142" vertical-offset="0" max-vertical-offset="1098">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/BaseDownloadTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="625" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadArticleTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="24" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.53485715" vertical-offset="0" max-vertical-offset="875">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#DownloadArticleTask#0;class#DownloadArticleTask#0" expanded="false" />
-            <element signature="e#908#1939#0" expanded="false" />
-            <element signature="e#1928#1929#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadMusicTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="57" selection-start="1634" selection-end="1634" vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1242">
-          <folding>
-            <element signature="method#DownloadMusicTask#0;class#DownloadMusicTask#0" expanded="false" />
-            <element signature="e#1844#1997#0" expanded="false" />
-            <element signature="e#1986#1987#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="23" column="6" selection-start="543" selection-end="543" vertical-scroll-proportion="0.45257142" vertical-offset="0" max-vertical-offset="1098" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/BaseBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.144" vertical-offset="0" max-vertical-offset="875">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.144" vertical-offset="0" max-vertical-offset="875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/FeedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="41" selection-start="392" selection-end="392" vertical-scroll-proportion="0.144" vertical-offset="0" max-vertical-offset="875">
-          <folding />
-        </state>
+        <state line="14" column="41" selection-start="392" selection-end="392" vertical-scroll-proportion="0.144" vertical-offset="0" max-vertical-offset="875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Image.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="206" selection-end="206" vertical-scroll-proportion="0.16457143" vertical-offset="0" max-vertical-offset="875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Music.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="28" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="2160">
-          <folding>
-            <element signature="docComment;class#Music#0" expanded="false" />
-            <element signature="method#Music#0;class#Music#0" expanded="false" />
-            <element signature="e#2854#2855#0" expanded="false" />
-            <element signature="e#2879#2880#0" expanded="false" />
-            <element signature="e#2907#2908#0" expanded="false" />
-            <element signature="e#2934#2935#0" expanded="false" />
-            <element signature="e#2965#2966#0" expanded="false" />
-            <element signature="e#2992#2993#0" expanded="false" />
-            <element signature="e#3026#3027#0" expanded="false" />
-            <element signature="e#3056#3057#0" expanded="false" />
-            <element signature="e#3089#3090#0" expanded="false" />
-            <element signature="e#3118#3119#0" expanded="false" />
-            <element signature="e#3269#3270#0" expanded="false" />
-            <element signature="e#3295#3296#0" expanded="false" />
-            <element signature="e#3329#3330#0" expanded="false" />
-            <element signature="e#3359#3360#0" expanded="false" />
-            <element signature="e#3390#3391#0" expanded="false" />
-            <element signature="e#3420#3421#0" expanded="false" />
-            <element signature="e#3460#3461#0" expanded="false" />
-            <element signature="e#3492#3493#0" expanded="false" />
-            <element signature="e#3529#3530#0" expanded="false" />
-            <element signature="e#3561#3562#0" expanded="false" />
-            <marker date="1386086071919" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1386086071919" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="8" column="21" selection-start="206" selection-end="206" vertical-scroll-proportion="0.16457143" vertical-offset="0" max-vertical-offset="875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Article.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.288" vertical-offset="0" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="23" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="1044">
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#startOfflineTask#0;class#YueduApp#0" expanded="false" />
-            <marker date="1386086186805" expanded="false" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1386086186805" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
+        <state line="21" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.288" vertical-offset="0" max-vertical-offset="1080" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicDashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="39" selection-start="305" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1674">
-          <folding>
-            <element signature="docComment;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#initViews#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="class#2295:2714" expanded="false" />
-            <element signature="method#onProgressChanged#0;class#2295:2714" expanded="false" />
-            <element signature="method#onStartTrackingTouch#0;class#2295:2714" expanded="false" />
-            <element signature="method#onStopTrackingTouch#0;class#2295:2714" expanded="false" />
-            <element signature="e#2775#2965#0" expanded="false" />
-            <element signature="e#2958#2959#0" expanded="false" />
-            <element signature="method#loadData#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="class#3234:4189" expanded="false" />
-            <element signature="method#onError#0;class#3234:4189" expanded="false" />
-            <element signature="method#onFinished#0;class#3234:4189" expanded="false" />
-            <element signature="e#4210#4363#0" expanded="false" />
-            <element signature="e#4352#4353#0" expanded="false" />
-            <element signature="docComment;method#startPlayMusic#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#startPlayMusic#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#onActivityCreated#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="docComment;method#registerBroadcast#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#registerBroadcast#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#unRegisterBroadcast#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#playNext#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#playPrev#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#seekTo#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#onClick#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#updateView#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#togglePlay#0;class#MusicDashboard#0" expanded="false" />
-            <element signature="method#onReceive#0;class#MusicDashBoardBroadcast#0;class#MusicDashboard#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" vertical-offset="565" max-vertical-offset="1440">
-          <folding>
-            <element signature="method#onCreateView#0;class#MusicListFragment#0" expanded="true" />
-            <element signature="method#initViews#0;class#MusicListFragment#0" expanded="true" />
-            <element signature="method#showMusics#0;class#MusicListFragment#0" expanded="true" />
-            <element signature="method#onClick#0;class#MusicListFragment#0" expanded="true" />
-            <element signature="method#onItemClick#0;class#MusicListFragment#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/adapter/MusicListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="11" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="1008">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onClick#0;class#1478:1584" expanded="false" />
-          </folding>
-        </state>
+        <state line="9" column="39" selection-start="305" selection-end="330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1674" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/listitem_music.xml">
@@ -1159,8 +1200,158 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="370" selection-end="370" vertical-scroll-proportion="0.21350364" vertical-offset="45" max-vertical-offset="1404">
+        <state line="9" column="21" selection-start="370" selection-end="370" vertical-scroll-proportion="0.21350364" vertical-offset="45" max-vertical-offset="1404" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-18/android.jar!/java/lang/Override.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="28" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252" />
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-18/android.jar!/android/widget/BaseAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="22" selection-start="166" selection-end="166" vertical-scroll-proportion="0.10285714" vertical-offset="0" max-vertical-offset="875" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/adapter/BaseListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="776" selection-end="776" vertical-scroll-proportion="0.4329897" vertical-offset="0" max-vertical-offset="873" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/BasePageFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="38" selection-start="629" selection-end="629" vertical-scroll-proportion="0.45360824" vertical-offset="0" max-vertical-offset="873">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#onAttach#0;class#BasePageFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/adapter/MusicListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="59" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#MusicListAdapter#0" expanded="false" />
+            <element signature="class#1478:1584" expanded="false" />
+            <element signature="method#onClick#0;class#1478:1584" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadPictureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="48" selection-start="481" selection-end="481" vertical-scroll-proportion="0.20571429" vertical-offset="0" max-vertical-offset="875">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/BaseDownloadTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="24" selection-start="456" selection-end="456" vertical-scroll-proportion="0.26742858" vertical-offset="0" max-vertical-offset="875">
+          <folding>
+            <element signature="method#BaseDownloadTask#0;class#BaseDownloadTask#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadArticleTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="14" selection-start="888" selection-end="894" vertical-scroll-proportion="0.30857143" vertical-offset="0" max-vertical-offset="875">
+          <folding>
+            <element signature="method#DownloadArticleTask#0;class#DownloadArticleTask#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/db/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="70" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.5294118" vertical-offset="0" max-vertical-offset="972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/sdk/platforms/android-18/android.jar!/org/apache/http/impl/client/DefaultHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="11" selection-start="501" selection-end="501" vertical-scroll-proportion="0.18907563" vertical-offset="0" max-vertical-offset="952">
+          <folding>
+            <element signature="method#DefaultHttpClient#2;class#DefaultHttpClient#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/app/YueduApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="4" selection-start="1298" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="846">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#downloadMusic#0;class#YueduApp#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/net/NetHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="13" selection-start="6270" selection-end="6270" vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1458">
+          <folding>
+            <element signature="method#httpPost#0;class#NetHelper#0" expanded="true" />
+            <element signature="method#httpGetStream#0;class#NetHelper#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/core/offline/DownloadMusicTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="0" selection-start="2030" selection-end="2030" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#DownloadMusicTask#0" expanded="false" />
+            <element signature="method#DownloadMusicTask#0;class#DownloadMusicTask#0" expanded="false" />
+            <element signature="method#onError#0;class#1040:1813" expanded="false" />
+            <element signature="e#1844#1997#0" expanded="false" />
+            <element signature="e#1986#1987#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="341" column="3" selection-start="10365" selection-end="10584" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1260">
+          <folding>
+            <marker date="1386359241686" expanded="true" signature="10368:10489" placeholder="/**...*/" />
+            <marker date="1386359241686" expanded="true" signature="10572:10584" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/bean/Music.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="36" selection-start="3874" selection-end="3874" vertical-scroll-proportion="0.0" vertical-offset="524" max-vertical-offset="1548">
+          <folding>
+            <element signature="e#3562#3563#0" expanded="true" />
+            <element signature="e#3594#3595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/ui/fragment/MusicListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1717" selection-end="1717" vertical-scroll-proportion="0.0" vertical-offset="403" max-vertical-offset="1440">
+          <folding>
+            <element signature="docComment;class#MusicListFragment#0" expanded="false" />
+            <element signature="e#986#993#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/xmu/swordbearer/yuedu/task/DownloadMusic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="53" selection-start="281" selection-end="281" vertical-scroll-proportion="0.16457143" vertical-offset="0" max-vertical-offset="1602">
+          <folding>
+            <element signature="method#DownloadMusic#0;class#DownloadMusic#0" expanded="true" />
+            <element signature="method#doInBackground#0;class#DownloadMusic#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1240,7 +1431,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>dexedLibs</last-edited>
+          <last-edited>android-support-v4</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
