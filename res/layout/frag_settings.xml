@@ -6,18 +6,18 @@
               android:layout_height="match_parent">
 
     <RelativeLayout
-            style="@style/AppHead"
-            android:id="@+id/settings_head">
+        style="@style/AppHead"
+        android:id="@+id/settings_head">
 
         <ImageButton
-                android:id="@+id/settings_btn_slide"
-                style="@style/AppHeadSlide"
-                android:src="@drawable/selector_head_slide_menu"
-                android:layout_alignParentLeft="true"/>
+            android:id="@+id/settings_btn_slide"
+            style="@style/AppHeadSlide"
+            android:src="@drawable/selector_head_slide_menu"
+            android:layout_alignParentLeft="true"/>
 
         <TextView
-                style="@style/AppHeadTitle"
-                android:text="@string/app_settings"/>
+            style="@style/AppHeadTitle"
+            android:text="@string/app_settings"/>
 
     </RelativeLayout>
 </LinearLayout>

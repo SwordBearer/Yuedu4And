@@ -7,11 +7,11 @@
               android:layout_height="match_parent">
 
     <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:id="@+id/listitem_feed_title"/>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:id="@+id/listitem_feed_title"/>
     <!--
         <TextView
                 android:layout_width="fill_parent"
@@ -19,7 +19,7 @@
                 android:id="@+id/listitem_feed_info"/>-->
 
     <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/listitem_feed_outline"/>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listitem_feed_outline"/>
 </LinearLayout>

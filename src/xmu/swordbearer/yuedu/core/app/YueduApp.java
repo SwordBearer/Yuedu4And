@@ -66,7 +66,7 @@ public class YueduApp extends Application {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            client.getConnectionManager().shutdown();
+//            client.getConnectionManager().shutdown();
         }
         Log.e("TEST", "音乐下载成功 " + file.length());
         return path;

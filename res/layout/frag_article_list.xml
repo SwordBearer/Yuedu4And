@@ -5,32 +5,32 @@
                 android:layout_height="match_parent">
 
     <RelativeLayout
-            style="@style/AppHead"
-            android:id="@+id/feeds_head">
+        style="@style/AppHead"
+        android:id="@+id/feeds_head">
 
         <ImageButton
-                android:id="@+id/main_btn_slide"
-                style="@style/AppHeadSlide"
-                android:src="@drawable/selector_head_slide_menu"
-                android:layout_alignParentLeft="true"/>
+            android:id="@+id/main_btn_slide"
+            style="@style/AppHeadSlide"
+            android:src="@drawable/selector_head_slide_menu"
+            android:layout_alignParentLeft="true"/>
 
         <TextView
-                style="@style/AppHeadTitle"
-                android:text="@string/daily_article"/>
+            style="@style/AppHeadTitle"
+            android:text="@string/daily_article"/>
 
         <ImageButton
-                android:id="@+id/main_btn_favorite"
-                style="@style/AppHeadBtn"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/selector_btn_referesh"/>
+            android:id="@+id/main_btn_user"
+            style="@style/AppHeadBtn"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/selector_btn_user"/>
     </RelativeLayout>
 
     <ListView
-            android:id="@+id/main_feed_lv"
-            android:layout_below="@id/feeds_head"
-            android:cacheColorHint="#0000"
-            android:listSelector="@drawable/selector_feed_list"
-            android:divider="@drawable/listitem_divider"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/main_feed_lv"
+        android:layout_below="@id/feeds_head"
+        android:cacheColorHint="#0000"
+        android:listSelector="@drawable/selector_feed_list"
+        android:divider="@drawable/listitem_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>

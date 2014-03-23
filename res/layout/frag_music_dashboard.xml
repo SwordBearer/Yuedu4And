@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/default_player_bg"
-    android:clickable="true"
-    android:focusable="true"
-    android:orientation="vertical">
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/default_player_bg"
+              android:clickable="true"
+              android:focusable="true"
+              android:orientation="vertical">
     <!--display music name and artist-->
     <TextView
         android:id="@+id/dashboard_music_name"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:text="Where I Stood -Miss Higgins"
-        android:textColor="@color/player_name" />
+        android:textColor="@color/player_name"/>
 
     <LinearLayout
         android:id="@+id/dashboard_footer"
@@ -36,26 +36,26 @@
                 android:id="@+id/dashboard_btn_play_mode"
                 style="@style/AppHeadBtn"
                 android:layout_marginRight="10dp"
-                android:src="@drawable/player_mode_repeat_one" />
+                android:src="@drawable/player_mode_repeat_one"/>
 
             <ImageButton
                 android:id="@+id/dashboard_btn_pre"
                 style="@style/AppHeadBtn"
                 android:layout_marginRight="5dp"
-                android:src="@drawable/selector_player_btn_pre" />
+                android:src="@drawable/selector_player_btn_pre"/>
 
             <ImageButton
                 android:id="@+id/dashboard_btn_play"
                 style="@style/AppHeadBtn"
                 android:layout_marginRight="5dp"
                 android:contentDescription="@null"
-                android:src="@drawable/selector_player_btn_play" />
+                android:src="@drawable/selector_player_btn_play"/>
 
             <ImageButton
                 android:id="@+id/dashboard_btn_next"
                 style="@style/AppHeadBtn"
                 android:layout_marginRight="4dp"
-                android:src="@drawable/selector_player_btn_next" />
+                android:src="@drawable/selector_player_btn_next"/>
 
             <TextView
                 android:id="@+id/dashboard_tv_time"
@@ -66,7 +66,7 @@
                 android:text="03:25/04:55"
                 android:textColor="@color/player_time"
                 android:textSize="12dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <SeekBar
@@ -79,12 +79,12 @@
             android:minHeight="8dp"
             android:progressDrawable="@drawable/style_player_progressbar"
             android:thumb="@drawable/music_progress_thumb"
-            android:thumbOffset="0dp" />
+            android:thumbOffset="0dp"/>
     </LinearLayout>
     <!--divder-->
     <View
         android:layout_width="fill_parent"
         android:layout_height="2dp"
-        android:background="@drawable/shape_player_divider" />
+        android:background="@drawable/shape_player_divider"/>
 
 </LinearLayout>

@@ -64,7 +64,7 @@ public class Music extends BaseBean {
         public static final String _URL = "url";
         public static final String _LYC_URL = "lyc_url";
         public static final String _CLOUD_ID = "cloudId";
-        public static final String _DOWNLOAD_PROGRESS = 'downProgress';
+        public static final String _DOWNLOAD_PROGRESS = "downProgress";
     }
 
     /**

@@ -33,7 +33,7 @@ import xmu.swordbearer.yuedu.utils.UiUtils;
  */
 public class ArticleListFragment extends BasePageFragment implements AdapterView.OnItemClickListener {
 
-    private ImageButton btnFavorite;
+    private ImageButton btnUser;
     private ListView lvFeeds;
     private ImageButton btnSlide;
 
@@ -53,11 +53,11 @@ public class ArticleListFragment extends BasePageFragment implements AdapterView
     @Override
     protected void initViews(View rootView) {
         btnSlide = (ImageButton) rootView.findViewById(R.id.main_btn_slide);
-        btnFavorite = (ImageButton) rootView.findViewById(R.id.main_btn_favorite);
+        btnUser = (ImageButton) rootView.findViewById(R.id.main_btn_user);
         lvFeeds = (ListView) rootView.findViewById(R.id.main_feed_lv);
 
         btnSlide.setOnClickListener(this);
-        btnFavorite.setOnClickListener(this);
+        btnUser.setOnClickListener(this);
         lvFeeds.setOnItemClickListener(this);
         //缓存
         feedList = (FeedList) CommonUtils.readCache(mContext, FeedList.CACHE_KEY);
@@ -160,8 +160,9 @@ public class ArticleListFragment extends BasePageFragment implements AdapterView
 
     @Override
     public void onClick(View v) {
-        if (v == btnFavorite) {
-            refresh();
+        if (v == btnUser) {
+            UiUtils.showToast(mContext, R.string.action_user);
+//            refresh();
         } else if (v == btnSlide) {
             toggleDrawer();
         }

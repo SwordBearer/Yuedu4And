@@ -33,6 +33,7 @@ public class MusicPlayerService extends Service implements
         MediaPlayer.OnErrorListener, MediaPlayer.OnBufferingUpdateListener {
     private static final String TAG = "MusicPlayerService";
     private MediaPlayer mMediaPlayer;
+    private Music mMusic;
 
     private TelephonyManager mTelephonyManager;
     private int initialCallState;
@@ -54,7 +55,8 @@ public class MusicPlayerService extends Service implements
     public static final String ACTION_MUSIC_SEEK_TO = "action_music_seekto";
 
     public static final String EXTRA_MUSIC = "extra_music";
-    public static final String EXTRA_SEEK_PERCENT = "extra_seek_percent";
+    public static final String EXTRA_PROGRESS_CUR = "extra_progress_cur";
+    public static final String EXTRA_PROGRESS_TOTAL = "extra_progress_total";
 
 
     public enum MediaSourceType {
@@ -109,7 +111,7 @@ public class MusicPlayerService extends Service implements
             preparePlayer(music);
             initialCallState = mTelephonyManager.getCallState();
         } else if (action.equals(ACTION_MUSIC_SEEK_TO)) {
-            float percent = intent.getFloatExtra(EXTRA_SEEK_PERCENT, -1);
+            float percent = intent.getFloatExtra(EXTRA_PROGRESS_CUR, -1);
             if (percent < 0)
                 return START_NOT_STICKY;
             seekTo(percent);
@@ -123,6 +125,10 @@ public class MusicPlayerService extends Service implements
      * @param music Music
      */
     private void preparePlayer(final Music music) {
+        if (music == this.mMusic || music == null) {
+            return;
+        }
+        this.mMusic = music;
         Uri uri = null;
         String path = music.getPath();
         if (path != null) {
@@ -148,9 +154,7 @@ public class MusicPlayerService extends Service implements
                 .setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
                     @Override
                     public void onPrepared(MediaPlayer mp) {
-                        start();
-                        showNotification(music);
-                        sendAction(ACTION_MUSIC_START_PLAY, music);
+                        start(mMusic);
                     }
                 });
 
@@ -214,7 +218,7 @@ public class MusicPlayerService extends Service implements
     /**
      * 开始播放
      */
-    private void start() {
+    private void start(Music music) {
         if (mMediaPlayer == null)
             return;
         mMediaPlayer.start();
@@ -222,6 +226,8 @@ public class MusicPlayerService extends Service implements
             mAudioFocusHelper.requestFocus();
         Log.e(TAG, "开始播放音乐 " + mMediaPlayer.getDuration());
         startTimer();
+        showNotification(music);
+        sendAction(ACTION_MUSIC_START_PLAY, music);
     }
 
     /**
@@ -244,9 +250,11 @@ public class MusicPlayerService extends Service implements
             return;
         if (mMediaPlayer.isPlaying()) {
             mMediaPlayer.pause();
+            sendAction(ACTION_MUSIC_PAUSE, null);
             stopTimer();
         } else {
             mMediaPlayer.start();
+            sendAction(ACTION_MUSIC_START_PLAY, mMusic);
             startTimer();
         }
     }
@@ -262,6 +270,9 @@ public class MusicPlayerService extends Service implements
         if (music != null) {
             intent.putExtra(EXTRA_MUSIC, music);
         }
+        intent.putExtra(EXTRA_PROGRESS_CUR, mMediaPlayer.getCurrentPosition());
+        intent.putExtra(EXTRA_PROGRESS_TOTAL, mMediaPlayer.getDuration());
+//        intent.putExtra(EXTRA_PROGRESS_TOTAL, 100 * mMediaPlayer.getCurrentPosition() / mMediaPlayer.getDuration());
         sendBroadcast(intent);
         Log.e("TEST", "MUSIC_service 发送广播 " + action);
     }
@@ -271,6 +282,7 @@ public class MusicPlayerService extends Service implements
      */
     private void updateUi() {
         Log.e("TEST", "正在播放   " + mMediaPlayer.getCurrentPosition());
+        sendAction(ACTION_MUSIC_SEEK_TO, mMusic);
     }
 
     @Override
@@ -296,7 +308,7 @@ public class MusicPlayerService extends Service implements
     public void audioFocusChanged(int focusChange) {
         switch (focusChange) {
             case AudioManager.AUDIOFOCUS_GAIN:
-                start();
+                start(this.mMusic);
                 break;
             case AudioManager.AUDIOFOCUS_LOSS:
                 stop();
@@ -317,7 +329,6 @@ public class MusicPlayerService extends Service implements
     public boolean onError(MediaPlayer mp, int what, int extra) {
         Log.e("TEST", "出错了 艹 " + what);
         stop();
-
         return true;
     }
 

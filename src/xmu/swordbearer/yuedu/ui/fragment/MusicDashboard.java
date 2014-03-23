@@ -166,6 +166,10 @@ public class MusicDashboard extends Fragment implements View.OnClickListener {
         }
         IntentFilter filter = new IntentFilter();
         filter.addAction(MusicPlayerService.ACTION_MUSIC_START_PLAY);
+        filter.addAction(MusicPlayerService.ACTION_MUSIC_PAUSE);
+        filter.addAction(MusicPlayerService.ACTION_MUSIC_STOP);
+        filter.addAction(MusicPlayerService.ACTION_MUSIC_TOGGLE_PLAY);
+        filter.addAction(MusicPlayerService.ACTION_MUSIC_SEEK_TO);
         getActivity().registerReceiver(broadcast, filter);
         Log.e("TEST", "注册了广播");
     }
@@ -217,14 +221,24 @@ public class MusicDashboard extends Fragment implements View.OnClickListener {
             if (action == null) {
                 return;
             }
-            if (action.equals(MusicPlayerService.ACTION_MUSIC_START_PLAY)) {
+            int curPos = intent.getIntExtra(MusicPlayerService.EXTRA_PROGRESS_CUR, 0);
+            int totalDuration = intent.getIntExtra(MusicPlayerService.EXTRA_PROGRESS_TOTAL, 0);
+            int pos = 0;
+            if (totalDuration != 0) {
+                pos = 100 * curPos / totalDuration;
+            }
+            seekBar.setProgress(pos);
+            Log.e("TEST-----", "=================更新播放界面 " + action + "         " + curPos + "/" + totalDuration + "  " + pos);
+            if (action.equals(MusicPlayerService.ACTION_MUSIC_START_PLAY) || action.equals(MusicPlayerService.ACTION_MUSIC_SEEK_TO)) {
                 Music music = (Music) intent
                         .getSerializableExtra(MusicPlayerService.EXTRA_MUSIC);
                 if (music == null) {
                     return;
                 }
-                Log.e("TEST-----", "=================更新播放界面");
                 updateView(music);
+                btnPlay.setImageResource(R.drawable.selector_player_btn_pause);
+            } else if (action.equals(MusicPlayerService.ACTION_MUSIC_PAUSE) || action.equals(MusicPlayerService.ACTION_MUSIC_STOP)) {
+                btnPlay.setImageResource(R.drawable.selector_player_btn_play);
             }
         }
     }

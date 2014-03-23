@@ -1,5 +1,6 @@
 package xmu.swordbearer.yuedu.task;
 
+import android.content.Context;
 import android.os.AsyncTask;
 
 import org.apache.http.HttpEntity;
@@ -24,7 +25,7 @@ public class DownloadMusic extends AsyncTask<String, Integer, Void> {
 //    private String _filePath;
 //    private String _fileName;
 //    private int _progress;
-    private Music mContext;
+    private Context mContext;
     private Music _music;
 
     public DownloadMusic(Context mContext, Music music) {
@@ -43,7 +44,7 @@ public class DownloadMusic extends AsyncTask<String, Integer, Void> {
             String url = strings[0];
 //            InputStream inStream = NetHelper.httpGetStream(url);
             HttpClient httpClient = new DefaultHttpClient();
-            HttpGet httpGet = new HttpGet(uri);
+            HttpGet httpGet = new HttpGet(url);
             InputStream inputStream = null;
             long fileLength = 0;//file size
             try {
@@ -52,16 +53,16 @@ public class DownloadMusic extends AsyncTask<String, Integer, Void> {
                 if (entity != null) {
                     inputStream = entity.getContent();
                     fileLength = entity.getContentLength();
-                    this._music.setPath(fileLength);
+                    this._music.setSize(fileLength);
                     //
-                    File file = new File(this._filePath);
+                    File file = new File(this._music.getPath());
                     file.mkdirs();
                     FileOutputStream fos = new FileOutputStream(file);
 
                     byte[] buff = new byte[1024];
                     int ln = 0;
                     while ((ln = inputStream.read(buff)) != -1) {
-                        this._progress += ln;
+//                        this._progress += ln;
 
                         fos.write(buff, 0, ln);
                     }
@@ -72,7 +73,9 @@ public class DownloadMusic extends AsyncTask<String, Integer, Void> {
                 e.printStackTrace();
                 return null;
             }
+        } finally {
         }
+        return null;
     }
 
     @Override

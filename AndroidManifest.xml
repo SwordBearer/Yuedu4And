@@ -14,24 +14,23 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <uses-sdk
-            android:minSdkVersion="7"
-            android:targetSdkVersion="16"/>
+        android:minSdkVersion="7"/>
 
     <supports-screens
-            android:anyDensity="true"
-            android:largeScreens="true"
-            android:normalScreens="true"
-            android:resizeable="true"
-            android:smallScreens="true"/>
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
 
     <application
-            android:allowBackup="true"
-            android:icon="@drawable/ic_launcher"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme">
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
         <activity
-                android:name=".ui.activity.SplashActivity"
-                android:label="@string/app_name">
+            android:name=".ui.activity.SplashActivity"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -42,15 +41,15 @@
         <activity android:name=".ui.activity.WeatherActivity">
         </activity>
         <activity
-                android:name=".ui.activity.HomeActivity"
-                android:launchMode="singleTask">
+            android:name=".ui.activity.HomeActivity"
+            android:launchMode="singleTask">
         </activity>
 
         <service android:name=".core.offline.OfflineService"/>
 
         <receiver
-                android:name=".core.offline.OfflineBroadcast"
-                android:process=".offline">
+            android:name=".core.offline.OfflineBroadcast"
+            android:process=".offline">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="download_article_started"/>
@@ -60,7 +59,6 @@
 
         <service android:name=".core.music.MusicPlayerService">
         </service>
-
         <receiver android:name=".core.music.BecomeNoisyReceiver">
             <intent-filter>
                 <action android:name="android.media.AUDIO_BECOMING_NOISY"/>
